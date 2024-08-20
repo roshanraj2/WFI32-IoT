@@ -1,4 +1,4 @@
-<config configName="aws_sdk_wfi32_iot_freertos" projectName="aws_sdk_wfi32_iot_freertos" configVersion="1.1" device="PIC32MZ1025W104132" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.0">
+<config configName="aws_sdk_wfi32_iot_freertos" projectName="aws_sdk_wfi32_iot_freertos" configVersion="1.1" device="PIC32MZ1025W104132" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.1">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -275,7 +275,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.2"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.2"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -1841,7 +1841,10 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
     &lt;GraphSettings canvasHeight=&quot;879&quot; canvasWidth=&quot;895&quot; dnOrder=&quot;0&quot;/&gt;
-    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;APPLICATION LAYER&quot;&gt;
+    &lt;PowerProfiles dnOrder=&quot;1&quot;&gt;
+      &lt;Profile dnOrder=&quot;0&quot; id=&quot;profile0&quot; name=&quot;Main&quot;/&gt;
+    &lt;/PowerProfiles&gt;
+    &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;APPLICATION LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipDhcp&quot; x=&quot;320&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipDhcps&quot; x=&quot;740&quot; y=&quot;20&quot;/&gt;
@@ -1851,7 +1854,7 @@
         &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;tcpip_apps_config&quot; x=&quot;20&quot; y=&quot;21&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;BASIC CONFIGURATION&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;3&quot; id=&quot;BASIC CONFIGURATION&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipCmd&quot; x=&quot;581&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipNetConfig&quot; x=&quot;421&quot; y=&quot;21&quot;/&gt;
@@ -1859,26 +1862,26 @@
         &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpip_basic_config&quot; x=&quot;21&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;3&quot; id=&quot;DRIVER LAYER&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;4&quot; id=&quot;DRIVER LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;drvWifiPic32mzw1&quot; x=&quot;281&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;drv_ba414e&quot; x=&quot;64&quot; y=&quot;135&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpip_driver_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;4&quot; id=&quot;NETWORK LAYER&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;5&quot; id=&quot;NETWORK LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipArp&quot; x=&quot;440&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipIPv4&quot; x=&quot;300&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpip_network_config&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;5&quot; id=&quot;PRESENTATION LAYER&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;6&quot; id=&quot;PRESENTATION LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;6&quot; id=&quot;TCP/IP STACK&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;7&quot; id=&quot;TCP/IP STACK&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;APPLICATION LAYER&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;BASIC CONFIGURATION&quot; x=&quot;680&quot; y=&quot;20&quot;/&gt;
@@ -1888,14 +1891,14 @@
         &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;TRANSPORT LAYER&quot; x=&quot;200&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;7&quot; id=&quot;TRANSPORT LAYER&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;8&quot; id=&quot;TRANSPORT LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipTcp&quot; x=&quot;440&quot; y=&quot;21&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipUdp&quot; x=&quot;300&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpip_transport_config&quot; x=&quot;20&quot; y=&quot;22&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;8&quot; id=&quot;__ROOTVIEW&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;9&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;BSP_PIC32MZ_W1_WFI32IoT&quot; x=&quot;31&quot; y=&quot;36&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;FreeRTOS&quot; x=&quot;29&quot; y=&quot;66&quot;/&gt;
@@ -7737,28 +7740,6 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="cryptoauthlib" name="CAL_ENABLE_TA100_AES_AUTH"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;cryptoauthlib&gt;
-  &lt;cryptoauthlib dnOrder=&quot;0&quot; id=&quot;CAL_ENABLE_TA100_AES_AUTH&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;cryptoauthlib&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/cryptoauthlib&gt;
-&lt;/cryptoauthlib&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="cryptoauthlib" name="CAL_ENABLE_TA100_FCE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;cryptoauthlib&gt;
-  &lt;cryptoauthlib dnOrder=&quot;0&quot; id=&quot;CAL_ENABLE_TA100_FCE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;cryptoauthlib&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/cryptoauthlib&gt;
-&lt;/cryptoauthlib&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="cryptoauthlib" name="CAL_ENABLE_WOLFCRYPTO"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;cryptoauthlib&gt;
   &lt;cryptoauthlib dnOrder=&quot;0&quot; id=&quot;CAL_ENABLE_WOLFCRYPTO&quot;&gt;
@@ -8423,19 +8404,6 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="cryptoauthlib" name="CAL_FILE_SRC_HAL_I2C"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;cryptoauthlib&gt;
   &lt;cryptoauthlib dnOrder=&quot;0&quot; id=&quot;CAL_FILE_SRC_HAL_I2C&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-  &lt;/cryptoauthlib&gt;
-&lt;/cryptoauthlib&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="cryptoauthlib" name="CAL_FILE_SRC_WOLFSSL_WRAPPER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;cryptoauthlib&gt;
-  &lt;cryptoauthlib dnOrder=&quot;0&quot; id=&quot;CAL_FILE_SRC_WOLFSSL_WRAPPER&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
       &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
@@ -10132,761 +10100,6 @@
          <value>PRESENTATION LAYER</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CERT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CERT&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;0&quot;/&gt;
-      &lt;User dnOrder=&quot;1&quot; value=&quot;0&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CERT_REPO"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CERT_REPO&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_CERT_FILENAME"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_CERT_FILENAME&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;wolfssl/certs_test.h&quot;/&gt;
-      &lt;User dnOrder=&quot;1&quot; value=&quot;cert_header.h&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_CERT_FORMAT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_CERT_FORMAT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;1&quot;/&gt;
-      &lt;User dnOrder=&quot;1&quot; value=&quot;1&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_CERT_LEN_VARIABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_CERT_LEN_VARIABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;sizeof_client_cert_der_2048&quot;/&gt;
-      &lt;User dnOrder=&quot;1&quot; value=&quot;sizeof_app_client_cert_der_starfield_base&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_CERT_VARIABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_CERT_VARIABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;client_cert_der_2048&quot;/&gt;
-      &lt;User dnOrder=&quot;1&quot; value=&quot;app_client_cert_der_starfield_base&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_DEVICE_CERT_LEN_VARIABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_DEVICE_CERT_LEN_VARIABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_DEVICE_CERT_VARIABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_DEVICE_CERT_VARIABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_DEVICE_PVT_KEY_LEN_VARIABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_DEVICE_PVT_KEY_LEN_VARIABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_DEVICE_PVT_KEY_VARIABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_DEVICE_PVT_KEY_VARIABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_IS_DEVICE_CERT_CHAIN"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_IS_DEVICE_CERT_CHAIN&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_MUTUAL_AUTH_FILENAME"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_MUTUAL_AUTH_FILENAME&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_MUTUAL_AUTH_FORMAT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_MUTUAL_AUTH_FORMAT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_MUTUAL_AUTH_SUPPORT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_MUTUAL_AUTH_SUPPORT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_CLIENT_SUPPORT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_CLIENT_SUPPORT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_ENABLE_ATECC_TNGTLS"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_ENABLE_ATECC_TNGTLS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_ENABLE_PEER_CERT_VERIFICATION"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_ENABLE_PEER_CERT_VERIFICATION&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_CONFIG_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_CONFIG_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_CONFIG_IDX1"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_CONFIG_IDX1&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_CONFIG_IDX2"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_CONFIG_IDX2&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_FILENAME_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_FILENAME_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_FILENAME_IDX1"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_FILENAME_IDX1&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_FILENAME_IDX2"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_FILENAME_IDX2&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_FORMAT_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_FORMAT_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_FORMAT_IDX1"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_FORMAT_IDX1&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_FORMAT_IDX2"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_FORMAT_IDX2&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_LEN_VARIABLE_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_LEN_VARIABLE_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_LEN_VARIABLE_IDX1"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_LEN_VARIABLE_IDX1&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_LEN_VARIABLE_IDX2"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_LEN_VARIABLE_IDX2&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_VARIABLE_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_VARIABLE_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_VARIABLE_IDX1"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_VARIABLE_IDX1&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_MORE_CLIENT_CERT_VARIABLE_IDX2"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_MORE_CLIENT_CERT_VARIABLE_IDX2&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_RUNTIME_CERT_SUPPORT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_RUNTIME_CERT_SUPPORT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_SERVER_CERT_FILENAME"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_SERVER_CERT_FILENAME&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;wolfssl/certs_test.h&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_SERVER_CERT_FORMAT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_SERVER_CERT_FORMAT&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;1&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_SERVER_CERT_LEN_VARIABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_SERVER_CERT_LEN_VARIABLE&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;sizeof_server_cert_der_2048&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_SERVER_CERT_VARIABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_SERVER_CERT_VARIABLE&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;server_cert_der_2048&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_SERVER_KEY_FILENAME"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_SERVER_KEY_FILENAME&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;wolfssl/certs_test.h&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_SERVER_KEY_LEN_VARIABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_SERVER_KEY_LEN_VARIABLE&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;sizeof_server_key_der_2048&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_SERVER_KEY_VARIABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_SERVER_KEY_VARIABLE&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;server_key_der_2048&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_BLOB_SERVER_SUPPORT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_BLOB_SERVER_SUPPORT&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_CERT_STORE_STUBS"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_CERT_STORE_STUBS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_CERT_STORE_STUBS_CLIENT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_CERT_STORE_STUBS_CLIENT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_CERT_STORE_STUBS_SERVER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_CERT_STORE_STUBS_SERVER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_ENC_PROVIDE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_ENC_PROVIDE&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_GENERATE_ENC_STUBS"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_GENERATE_ENC_STUBS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_NEEDED"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_NEEDED&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_RTOS"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_RTOS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_RTOS_DELAY"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_RTOS_DELAY&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_RTOS_STACK_SIZE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_RTOS_STACK_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;32768&quot;/&gt;
-      &lt;User dnOrder=&quot;1&quot; value=&quot;12000&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_RTOS_TASK_PRIORITY"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_RTOS_TASK_PRIORITY&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_RTOS_USE_DELAY"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_RTOS_USE_DELAY&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SOCKETS"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SOCKETS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;4&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_ALPN"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_ALPN&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_ALPN_PROTOCOL_NAME"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_ALPN_PROTOCOL_NAME&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_CLIENT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_CLIENT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_CLIENT_ENC"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_CLIENT_ENC&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_DATAGRAM"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_DATAGRAM&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_DATAGRAM_ENC"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_DATAGRAM_ENC&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_ENCRYPTION"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_ENCRYPTION&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_SERVER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_SERVER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_SERVER_ENC"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_SERVER_ENC&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_SNI"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_SNI&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_SNI_HOST_NAME"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_SNI_HOST_NAME&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_STREAM"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_STREAM&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_STREAM_ENC"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_STREAM_ENC&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_TRANSPORT_AS_TCPIP"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_TRANSPORT_AS_TCPIP&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_USE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_USE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_USE_WOLF_SSL"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_USE_WOLF_SSL&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_USE_WOLF_SSL_DEBUG_LOG"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_USE_WOLF_SSL_DEBUG_LOG&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_USE_WOLF_SSL_DEBUG_LOG_BUFFERS"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
-  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_USE_WOLF_SSL_DEBUG_LOG_BUFFERS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/net_Pres&gt;
-&lt;/net_Pres&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="power" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>__ROOTVIEW</value>
       </entry>
@@ -11685,20 +10898,6 @@
          <value>BASIC CONFIGURATION</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipCmd" name="TCPIP_STACK_COMMANDS_STORAGE_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipCmd&gt;
-  &lt;tcpipCmd dnOrder=&quot;0&quot; id=&quot;TCPIP_STACK_COMMANDS_STORAGE_ENABLE&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;/&gt;
-  &lt;/tcpipCmd&gt;
-&lt;/tcpipCmd&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipDhcp" name="!@#harmonyAttachmentState"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipDhcp&gt;
   &lt;tcpipDhcp dnOrder=&quot;0&quot;/&gt;
@@ -11708,17 +10907,6 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipDhcp" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>APPLICATION LAYER</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipDhcp" name="TCPIP_DHCP_HEAP_SIZE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipDhcp&gt;
-  &lt;tcpipDhcp dnOrder=&quot;0&quot; id=&quot;TCPIP_DHCP_HEAP_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipDhcp&quot; value=&quot;88&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipDhcp&gt;
-&lt;/tcpipDhcp&gt;
-</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipDhcps" name="!@#harmonyAttachmentState"/>
@@ -11732,17 +10920,6 @@
          <value>APPLICATION LAYER</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipDhcps" name="TCPIP_DHCP_SERVER_HEAP_SIZE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipDhcps&gt;
-  &lt;tcpipDhcps dnOrder=&quot;0&quot; id=&quot;TCPIP_DHCP_SERVER_HEAP_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipDhcps&quot; value=&quot;492&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipDhcps&gt;
-&lt;/tcpipDhcps&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipDns" name="!@#harmonyAttachmentState"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipDns&gt;
   &lt;tcpipDns dnOrder=&quot;0&quot;/&gt;
@@ -11752,28 +10929,6 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipDns" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>APPLICATION LAYER</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipDns" name="TCPIP_DNS_CLIENT_HEAP_SIZE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipDns&gt;
-  &lt;tcpipDns dnOrder=&quot;0&quot; id=&quot;TCPIP_DNS_CLIENT_HEAP_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipDns&quot; value=&quot;540&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipDns&gt;
-&lt;/tcpipDns&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipDns" name="TCPIP_DNS_CLIENT_MAX_HOSTNAME_LEN"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipDns&gt;
-  &lt;tcpipDns dnOrder=&quot;0&quot; id=&quot;TCPIP_DNS_CLIENT_MAX_HOSTNAME_LEN&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;100&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipDns&gt;
-&lt;/tcpipDns&gt;
-</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipIPv4" name="!@#harmonyAttachmentState"/>
@@ -11798,73 +10953,6 @@
          <value>APPLICATION LAYER</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipIcmp" name="TCPIP_ICMP_COMMAND_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipIcmp&gt;
-  &lt;tcpipIcmp dnOrder=&quot;0&quot; id=&quot;TCPIP_ICMP_COMMAND_ENABLE&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;/&gt;
-  &lt;/tcpipIcmp&gt;
-&lt;/tcpipIcmp&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipIcmp" name="TCPIP_ICMP_ECHO_REQUEST_TIMEOUT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipIcmp&gt;
-  &lt;tcpipIcmp dnOrder=&quot;0&quot; id=&quot;TCPIP_ICMP_ECHO_REQUEST_TIMEOUT&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;/&gt;
-  &lt;/tcpipIcmp&gt;
-&lt;/tcpipIcmp&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipIcmp" name="TCPIP_ICMP_TASK_TICK_RATE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipIcmp&gt;
-  &lt;tcpipIcmp dnOrder=&quot;0&quot; id=&quot;TCPIP_ICMP_TASK_TICK_RATE&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;/&gt;
-  &lt;/tcpipIcmp&gt;
-&lt;/tcpipIcmp&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipIcmp" name="TCPIP_STACK_MAX_CLIENT_ECHO_REQUESTS"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipIcmp&gt;
-  &lt;tcpipIcmp dnOrder=&quot;0&quot; id=&quot;TCPIP_STACK_MAX_CLIENT_ECHO_REQUESTS&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;/&gt;
-  &lt;/tcpipIcmp&gt;
-&lt;/tcpipIcmp&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipIcmp" name="TCPIP_STACK_USE_ICMP_CLIENT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipIcmp&gt;
-  &lt;tcpipIcmp dnOrder=&quot;0&quot; id=&quot;TCPIP_STACK_USE_ICMP_CLIENT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipIcmp&gt;
-&lt;/tcpipIcmp&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipNetConfig" name="!@#harmonyAttachmentState"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipNetConfig&gt;
   &lt;tcpipNetConfig dnOrder=&quot;0&quot;/&gt;
@@ -11887,94 +10975,6 @@
          <value>tcpipNetConfig</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipNetConfig_0" name="TCPIP_NETWORK_DEFAULT_DNS_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipNetConfig_0&gt;
-  &lt;tcpipNetConfig_0 dnOrder=&quot;0&quot; id=&quot;TCPIP_NETWORK_DEFAULT_DNS_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipNetConfig_0&quot; value=&quot;192.168.1.1&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipNetConfig_0&gt;
-&lt;/tcpipNetConfig_0&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipNetConfig_0" name="TCPIP_NETWORK_DEFAULT_GATEWAY_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipNetConfig_0&gt;
-  &lt;tcpipNetConfig_0 dnOrder=&quot;0&quot; id=&quot;TCPIP_NETWORK_DEFAULT_GATEWAY_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipNetConfig_0&quot; value=&quot;192.168.1.1&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipNetConfig_0&gt;
-&lt;/tcpipNetConfig_0&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipNetConfig_0" name="TCPIP_NETWORK_DEFAULT_HOST_NAME_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipNetConfig_0&gt;
-  &lt;tcpipNetConfig_0 dnOrder=&quot;0&quot; id=&quot;TCPIP_NETWORK_DEFAULT_HOST_NAME_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipNetConfig_0&quot; value=&quot;MCHPBOARD_W&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipNetConfig_0&gt;
-&lt;/tcpipNetConfig_0&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipNetConfig_0" name="TCPIP_NETWORK_DEFAULT_INTERFACE_NAME_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipNetConfig_0&gt;
-  &lt;tcpipNetConfig_0 dnOrder=&quot;0&quot; id=&quot;TCPIP_NETWORK_DEFAULT_INTERFACE_NAME_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipNetConfig_0&quot; value=&quot;PIC32MZW1&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipNetConfig_0&gt;
-&lt;/tcpipNetConfig_0&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipNetConfig_0" name="TCPIP_NETWORK_DEFAULT_IP_ADDRESS_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipNetConfig_0&gt;
-  &lt;tcpipNetConfig_0 dnOrder=&quot;0&quot; id=&quot;TCPIP_NETWORK_DEFAULT_IP_ADDRESS_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipNetConfig_0&quot; value=&quot;0.0.0.0&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipNetConfig_0&gt;
-&lt;/tcpipNetConfig_0&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipNetConfig_0" name="TCPIP_NETWORK_DEFAULT_MAC_DRIVER_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipNetConfig_0&gt;
-  &lt;tcpipNetConfig_0 dnOrder=&quot;0&quot; id=&quot;TCPIP_NETWORK_DEFAULT_MAC_DRIVER_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipNetConfig_0&quot; value=&quot;WDRV_PIC32MZW1_MACObject&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipNetConfig_0&gt;
-&lt;/tcpipNetConfig_0&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipNetConfig_0" name="TCPIP_STACK_NETWORK_CONFIG_IDX0"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipNetConfig_0&gt;
-  &lt;tcpipNetConfig_0 dnOrder=&quot;0&quot; id=&quot;TCPIP_STACK_NETWORK_CONFIG_IDX0&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipNetConfig_0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipNetConfig_0&gt;
-&lt;/tcpipNetConfig_0&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipNetConfig_0" name="TCPIP_STACK_NETWORK_CONFIG_NUMBER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipNetConfig_0&gt;
-  &lt;tcpipNetConfig_0 dnOrder=&quot;0&quot; id=&quot;TCPIP_STACK_NETWORK_CONFIG_NUMBER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipNetConfig_0&quot; value=&quot;0&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipNetConfig_0&gt;
-&lt;/tcpipNetConfig_0&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSntp" name="!@#harmonyAttachmentState"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSntp&gt;
   &lt;tcpipSntp dnOrder=&quot;0&quot;/&gt;
@@ -11984,28 +10984,6 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSntp" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>APPLICATION LAYER</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSntp" name="TCPIP_NTP_DEFAULT_IF"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSntp&gt;
-  &lt;tcpipSntp dnOrder=&quot;0&quot; id=&quot;TCPIP_NTP_DEFAULT_IF&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipSntp&quot; value=&quot;PIC32MZW1&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipSntp&gt;
-&lt;/tcpipSntp&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSntp" name="TCPIP_NTP_SERVER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSntp&gt;
-  &lt;tcpipSntp dnOrder=&quot;0&quot; id=&quot;TCPIP_NTP_SERVER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;time.google.com&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipSntp&gt;
-&lt;/tcpipSntp&gt;
-</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipStack" name="!@#harmonyAttachmentState"/>
@@ -12190,50 +11168,6 @@
          <value>TRANSPORT LAYER</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_HEAP_SIZE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
-  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_HEAP_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipTcp&quot; value=&quot;15260&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipTcp&gt;
-&lt;/tcpipTcp&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_MAX_SOCKETS"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
-  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_MAX_SOCKETS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;5&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipTcp&gt;
-&lt;/tcpipTcp&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_SOCKET_DEFAULT_RX_SIZE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
-  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_SOCKET_DEFAULT_RX_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;1460&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipTcp&gt;
-&lt;/tcpipTcp&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_SOCKET_DEFAULT_TX_SIZE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
-  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_SOCKET_DEFAULT_TX_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;1460&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipTcp&gt;
-&lt;/tcpipTcp&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipUdp" name="!@#harmonyAttachmentState"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipUdp&gt;
   &lt;tcpipUdp dnOrder=&quot;0&quot;/&gt;
@@ -12245,125 +11179,12 @@
          <value>TRANSPORT LAYER</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipUdp" name="TCPIP_UDP_HEAP_SIZE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipUdp&gt;
-  &lt;tcpipUdp dnOrder=&quot;0&quot; id=&quot;TCPIP_UDP_HEAP_SIZE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipUdp&quot; value=&quot;8180&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipUdp&gt;
-&lt;/tcpipUdp&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipUdp" name="TCPIP_UDP_MAX_SOCKETS"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipUdp&gt;
-  &lt;tcpipUdp dnOrder=&quot;0&quot; id=&quot;TCPIP_UDP_MAX_SOCKETS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;5&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpipUdp&gt;
-&lt;/tcpipUdp&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_apps_config" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>APPLICATION LAYER</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_apps_config" name="TCPIP_AUTOCONFIG_ENABLE_DHCP_CLIENT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_apps_config&gt;
-  &lt;tcpip_apps_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_DHCP_CLIENT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_apps_config&gt;
-&lt;/tcpip_apps_config&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_apps_config" name="TCPIP_AUTOCONFIG_ENABLE_DHCP_SERVER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_apps_config&gt;
-  &lt;tcpip_apps_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_DHCP_SERVER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_apps_config&gt;
-&lt;/tcpip_apps_config&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_apps_config" name="TCPIP_AUTOCONFIG_ENABLE_DHCP_SERVER_V2"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_apps_config&gt;
-  &lt;tcpip_apps_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_DHCP_SERVER_V2&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;readOnly&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;/&gt;
-  &lt;/tcpip_apps_config&gt;
-&lt;/tcpip_apps_config&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_apps_config" name="TCPIP_AUTOCONFIG_ENABLE_DNS_CLIENT"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_apps_config&gt;
-  &lt;tcpip_apps_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_DNS_CLIENT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_apps_config&gt;
-&lt;/tcpip_apps_config&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_apps_config" name="TCPIP_AUTOCONFIG_ENABLE_SNTP"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_apps_config&gt;
-  &lt;tcpip_apps_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_SNTP&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_apps_config&gt;
-&lt;/tcpip_apps_config&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_basic_config" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>BASIC CONFIGURATION</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_basic_config" name="TCPIP_AUTOCONFIG_ENABLE_NETCONFIG"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_basic_config&gt;
-  &lt;tcpip_basic_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_NETCONFIG&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpip_apps_config&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_basic_config&gt;
-&lt;/tcpip_basic_config&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_basic_config" name="TCPIP_AUTOCONFIG_ENABLE_STACK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_basic_config&gt;
-  &lt;tcpip_basic_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_STACK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpip_apps_config&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_basic_config&gt;
-&lt;/tcpip_basic_config&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_basic_config" name="TCPIP_AUTOCONFIG_ENABLE_TCPIPCMD"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_basic_config&gt;
-  &lt;tcpip_basic_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_TCPIPCMD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_basic_config&gt;
-&lt;/tcpip_basic_config&gt;
-</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_driver_config" name="#&amp;__MCC_Group_Parrent_id"/>
@@ -12374,63 +11195,8 @@
          <value>NETWORK LAYER</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_network_config" name="TCPIP_AUTOCONFIG_ENABLE_ARP"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_network_config&gt;
-  &lt;tcpip_network_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_ARP&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpip_network_config&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_network_config&gt;
-&lt;/tcpip_network_config&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_network_config" name="TCPIP_AUTOCONFIG_ENABLE_ICMPv4"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_network_config&gt;
-  &lt;tcpip_network_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_ICMPv4&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpip_network_config&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_network_config&gt;
-&lt;/tcpip_network_config&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_network_config" name="TCPIP_AUTOCONFIG_ENABLE_IPV4"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_network_config&gt;
-  &lt;tcpip_network_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_IPV4&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpip_apps_config&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_network_config&gt;
-&lt;/tcpip_network_config&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_transport_config" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>TRANSPORT LAYER</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_transport_config" name="TCPIP_AUTOCONFIG_ENABLE_TCP"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_transport_config&gt;
-  &lt;tcpip_transport_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_TCP&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_transport_config&gt;
-&lt;/tcpip_transport_config&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpip_transport_config" name="TCPIP_AUTOCONFIG_ENABLE_UDP"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpip_transport_config&gt;
-  &lt;tcpip_transport_config dnOrder=&quot;0&quot; id=&quot;TCPIP_AUTOCONFIG_ENABLE_UDP&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpip_apps_config&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/tcpip_transport_config&gt;
-&lt;/tcpip_transport_config&gt;
-</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="uart1" name="!@#harmonyAttachmentState"/>
@@ -13021,7 +11787,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\configuration.h</file>
-         <hash>4090187fdf905e2c6794606df1d56b4eb4049dd51d9bf0d8371e1419e3b08305</hash>
+         <hash>7fa4e47f0ada54f3da5137d7a9a6b01a46ce5ba46b4da8c1aae717e9dacf7a41</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\crypto\crypto.h</file>
@@ -13033,7 +11799,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\definitions.h</file>
-         <hash>5f41ca7d31bc926e87cdadf25b541c219bc0bcc58bc2effb1b7107e46a500bbc</hash>
+         <hash>282635e56f2998da516352049ec39f5ab9588b5601afc6430bb0e9b3a8294185</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\device.h</file>
@@ -13093,7 +11859,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\memory\src\drv_memory.c</file>
-         <hash>808d43318deace95edc80d3ccbadfcfff5298b35a2e705be7ac5fcae1d7f8c98</hash>
+         <hash>1922248aa8310ad78b6ac1e65a01e87d9a3d3e8ed5a5bebfbd9b198d66ce81ec</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\memory\src\drv_memory_file_system.c</file>
@@ -13161,11 +11927,11 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\drv_usbfs.c</file>
-         <hash>e44edfe45c70f71760ba7e7f618087ea362ff06dcea72a0803f77b8b9a4bbdf0</hash>
+         <hash>fc11cf1cd89567f204575865277da8b4e9dfe66f2270f81d9f8dcce260923ad9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\drv_usbfs_device.c</file>
-         <hash>f1b2e18aa1aef64aa83ee94ed0295b6e0b25517d60974218eddf26497c418357</hash>
+         <hash>edd0e74877cbf0eb181e12ef4cbb69bfba4d81a7f35f39b01942ff79cea93806</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\drv_usbfs_local.h</file>
@@ -13181,11 +11947,11 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\plib_usbfs_header.h</file>
-         <hash>0b40f0e15d10a80cf2baaa2a18aef603644d004cb7fdd503a742b6d64d3fd58e</hash>
+         <hash>4bf6eee0feead470e6ac2cd732bc274c5759d1afe2cd226f7d884125a9f86d0c</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ALL_Interrupt_Default.h</file>
-         <hash>1b46feb43fdb2e8d6dd5b41ddfc0f5d19279054aa44a8f2e20ff74cdd8157261</hash>
+         <hash>d6ac8dfb5d85240389e67493f3a4ad69e1caf141d3e48704b15fcbb0c531cabe</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ALL_Interrupt_Unsupported.h</file>
@@ -13193,7 +11959,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ActivityPending_Default.h</file>
-         <hash>adc55bece7f5bd0bcf22d6decd9b78cf6b1e72d09095bd186787b69e35ba5c75</hash>
+         <hash>ecf5168dcda70df3e88e19a53081ef6cdd5ce0469e13a1b92a7784d3866286ad</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ActivityPending_Unsupported.h</file>
@@ -13201,7 +11967,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_AutomaticSuspend_Default.h</file>
-         <hash>bbb49ba2a1e89b896466f39ad798203b063c9f154aa1a6509f34d117ffc69138</hash>
+         <hash>5a09385efbe4167dba2654b87807298bea373375edf6b79658d065f2b00f33e1</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_AutomaticSuspend_Unsupported.h</file>
@@ -13209,7 +11975,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_BDTBaseAddress_Default.h</file>
-         <hash>68fbffceb879e765571791100ac23053b162a0510755ef177cc8ff7083afe8f9</hash>
+         <hash>2eb928b9a2ec5b6ad201c19b5cc458d1461e03846236b98b184f2b25fc26b1b8</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_BDTBaseAddress_Unsupported.h</file>
@@ -13217,7 +11983,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_BDTFunctions_PIC32.h</file>
-         <hash>0ad6b797728a2dafde391d0801ffe67b461953e0803bdb6fcc3dce971385a722</hash>
+         <hash>4dc2ce9a382a050ed79eb41f445cdbaa9e4f604abdd14befb1ae6f0eb3ed36b3</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_BDTFunctions_Unsupported.h</file>
@@ -13225,7 +11991,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_BufferFreeze_Default.h</file>
-         <hash>710b605d6fc82760e3d4fb5d8c2edac5f5bca39c8854498232de853db07e0aaa</hash>
+         <hash>1ad52449b41b458cf05e9573ae27a250d17c88a1a9831475a7e6ce6174e8532d</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_BufferFreeze_Unsupported.h</file>
@@ -13233,7 +11999,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_DeviceAddress_Default.h</file>
-         <hash>6249313f87ec9055d6be92042afcdebb25173f04dcf68f5793c1242587cd429d</hash>
+         <hash>050b17f900927fd96fa3359bc90e880c80959aa614d56cbd270b042ecbbbe2eb</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_DeviceAddress_Unsupported.h</file>
@@ -13241,7 +12007,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_EP0LowSpeedConnect_Default.h</file>
-         <hash>2bd121f55865942c85e6f6bc3ccf258a7cc6c89c3c35f6c23a1f59dbc2f8e132</hash>
+         <hash>20eabaaa6b8558a1f5d8af22b1a55d1d3cd1459a14b9e5b8543d9fef3ba4829d</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_EP0LowSpeedConnect_Unsupported.h</file>
@@ -13249,7 +12015,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_EP0NAKRetry_Default.h</file>
-         <hash>5375417f2eda183747f0bc01039d6a82401b3a90d68bfe71630ddea00c8c0a5e</hash>
+         <hash>8d6418d0b663c7f52430245441e52790548a765ec3e48e8ff1d4ead86020184b</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_EP0NAKRetry_Unsupported.h</file>
@@ -13273,7 +12039,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_EPnRxEnableEnhanced_PIC32.h</file>
-         <hash>62ff9407e36cb9aff174717815d03307b82121b89298f9b0643b7eeb819b3602</hash>
+         <hash>732edf2154d31b74b512540def06c749cb503f3a4d56f89457150897040005f3</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_EPnRxEnableEnhanced_Unsupported.h</file>
@@ -13289,7 +12055,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_EPnTxRx_Default.h</file>
-         <hash>f074c52d28bb0956c548e14e18bef350c658f3c55a5bc6a5d8cc1ff41755cb37</hash>
+         <hash>80a328e1e584450683be14a2db5897e32440a1c4b887318df59457235854c767</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_EPnTxRx_Unsupported.h</file>
@@ -13297,7 +12063,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ERR_InterruptStatus_Default.h</file>
-         <hash>600b73d75871e8273f469c3e97091f97e01920053985155164f93db241e58c8b</hash>
+         <hash>7217f2ed5dac20c4d10402cd7dc8a61bf21fc785bfd59f08cea66b947e0f623b</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ERR_InterruptStatus_Unsupported.h</file>
@@ -13305,7 +12071,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ERR_Interrupt_Default.h</file>
-         <hash>68fae2167eba5ddc52bee52984ffd57a0be34b4d0000fea7a1e4e0fa94837863</hash>
+         <hash>19bc56006071007501ef7648d7d510181cf661410bbd2cdf86364b10135cb8cd</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ERR_Interrupt_Unsupported.h</file>
@@ -13313,7 +12079,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_EyePattern_Default.h</file>
-         <hash>6a3c0dcb8c6c74f86ea5ed2694c6e83143623399f0bfce142a2c678efeca895c</hash>
+         <hash>a4d5c9254b28cb061369a82bc285e65ab7edd3c8826e1104d8cc50fb5dd3d4ab</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_EyePattern_Unsupported.h</file>
@@ -13321,7 +12087,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_FrameNumber_Default.h</file>
-         <hash>8bc67f9f015e4808044a189ea8b55784f76bf3bdc81569cdf933e9c0dd83a147</hash>
+         <hash>895fe52cf0e2e2f24a92c586a6a7fa41f228bae7ffc98196622b495bcc2ddeab</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_FrameNumber_Unsupported.h</file>
@@ -13329,7 +12095,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_GEN_InterruptStatus_Default.h</file>
-         <hash>751e1789a4c829b9e6508b486b881a92d3a311ca9a01969831028b41d30359ca</hash>
+         <hash>a08654bcc33acc5b87127a657cdcd91278ae74c6c187e5b61fc841fec5a22dce</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_GEN_InterruptStatus_Unsupported.h</file>
@@ -13337,7 +12103,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_GEN_Interrupt_Default.h</file>
-         <hash>bfd46efe244584c153641b73acd82213d453fa6db12e85bd2634dadfdbfe5567</hash>
+         <hash>a3a6a8e602d0cc7b36744c101cae923f5c4b36498568e235f6efa75d4c5f722b</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_GEN_Interrupt_Unsupported.h</file>
@@ -13345,7 +12111,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_HostBusyWithToken_Default.h</file>
-         <hash>8d578924997158baae8c58c59d94f71f385755c408307f7d5ad54cf984838b2d</hash>
+         <hash>d14fdfa8dab382b14caa4d1cb0c7f726ffa0a998cb32b23b9c3d83f940124a17</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_HostBusyWithToken_Unsupported.h</file>
@@ -13353,7 +12119,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_HostGeneratesReset_Default.h</file>
-         <hash>8b9f8657c405e1ae4e249dcec3c02b0f45fd3e986d8765a25d4af0340e6caed1</hash>
+         <hash>54378f355548ef46684853bbdc350af868890f8b667d9ea1c12714d4f447ba7f</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_HostGeneratesReset_Unsupported.h</file>
@@ -13361,7 +12127,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LastDirection_Default.h</file>
-         <hash>2cefc9436d95bde8fdc00a899a321314206178fb6db5de306a6b5f81db6b1943</hash>
+         <hash>b4c8cfb60ee4ca2f2233bbb8f0ec45af3b07f9e115f11bb90edb94989c48b791</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LastDirection_Unsupported.h</file>
@@ -13369,7 +12135,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LastEndpoint_Default.h</file>
-         <hash>a1fccfc867f18b6e41c517cf34a3f2422ceb18256335dc8c943d452f4b37b7f8</hash>
+         <hash>7e854601e084671864b6422c0edfb189e2b06364644978b7b8bfc5b362ce3384</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LastEndpoint_Unsupported.h</file>
@@ -13377,7 +12143,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LastPingPong_Default.h</file>
-         <hash>c826371e1f9938ca4942290bb06636c71d8d60afe319c6e59990d7ffccd0771a</hash>
+         <hash>8d155835ec86843a9470ea106a2f1262460300f1ff8621c5e4b710f999b63cf4</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LastPingPong_Unsupported.h</file>
@@ -13385,7 +12151,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LastTransactionDetails_Default.h</file>
-         <hash>2e2d88cbc30977931899fbc6a7b9d0501f7cf87dc16399e574e50a1064037dfb</hash>
+         <hash>a50a3305afbed5162d7550fc41f73ab106e0744b0f57b2590f9bd07b40cc8ef9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LastTransactionDetails_Unsupported.h</file>
@@ -13393,7 +12159,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LiveJState_Default.h</file>
-         <hash>014627fc79b536977457ce805f0634d9ac24f901dbe98697322229f8c4c20970</hash>
+         <hash>29b6d36b879a03aad945874f151c6fa0998d0ddf64374cbb3e91f4fccec05c3c</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LiveJState_Unsupported.h</file>
@@ -13401,7 +12167,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LiveSingleEndedZero_Default.h</file>
-         <hash>a6ba42dfa54aae2c9822b2d12dce4f596143cecdc615c44644e6f5f50e591bbc</hash>
+         <hash>b5cc0b4acd9db20c8f03f7456271e2e29aeab244956c7438086e02965d33d430</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_LiveSingleEndedZero_Unsupported.h</file>
@@ -13409,7 +12175,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ModuleBusy_Default.h</file>
-         <hash>8af39ae0222ddd0efdd0208feda24ba4e87296551f427160f7133756f6d61c1d</hash>
+         <hash>02a71f935a6d9922ba46df7eb9cfe739d4824348ff6effaacf538ff661c5b3ed</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ModuleBusy_Unsupported.h</file>
@@ -13417,7 +12183,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ModulePower_32Bit16Bit.h</file>
-         <hash>befe921f39877d72860989b20ac5aafcd5ff2da8bd125a6d1312aae430ce73f4</hash>
+         <hash>a1f108325d3625329b1553a1845a0e9b0b58be857c5b7981d5a887da059d3555</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ModulePower_Unsupported.h</file>
@@ -13425,7 +12191,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_NextTokenSpeed_Default.h</file>
-         <hash>b5214d9378c63de7b4b62be2dbb4ec06631e5ae4728bcdd0e7409494f61279e0</hash>
+         <hash>a6799c7253afa4c1be9e01fb3cedf5c82ebf48c76a8c26a93c3bfc6bc06948a6</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_NextTokenSpeed_Unsupported.h</file>
@@ -13433,7 +12199,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_ASessionValid_Default.h</file>
-         <hash>843a20e2e334b74e1ab1d9f6d647850a674589200d05f983b20ec0816c116a1e</hash>
+         <hash>c03c0791ace861077f37e3d531b4ac9f2eebcf00ea6f228c9823dd5fa768e393</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_ASessionValid_Unsupported.h</file>
@@ -13441,7 +12207,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_BSessionEnd_Default.h</file>
-         <hash>801a045ee18cea5fb9875544d60b76a04cc8fcacbc96a8a890f2b4eec66ce65b</hash>
+         <hash>7c5253cc1ecc77afc9831a873e31f890fe155e0c62aadb1a24150c47c3711b43</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_BSessionEnd_Unsupported.h</file>
@@ -13449,7 +12215,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_IDPinState_Default.h</file>
-         <hash>bcd9e8c414e5cddaf23365c8610e4ee612fc9f5cc81418871aa35f7f61410c62</hash>
+         <hash>db536c381b17a517fa7f9ed1bab691dffc752bc1090c93f67c00a8beb9541753</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_IDPinState_Unsupported.h</file>
@@ -13457,7 +12223,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_InterruptStatus_Default.h</file>
-         <hash>b1d6fc0a42ae60eb89cb3d0e89e6411f9a6d279531173d36b3dccbc10184fec3</hash>
+         <hash>1ba98f95c38c40fc4d0f75473f764869d80c47f2ee6c14d230bccec4954d771d</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_InterruptStatus_Unsupported.h</file>
@@ -13465,7 +12231,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_Interrupt_Default.h</file>
-         <hash>108463ef94ddfd7a7166663f782f68066cb558ebb564a2ecadbc2d1817487f9f</hash>
+         <hash>488a63fe87318522b457fe459fe09a002f0cd271193757f21e738dda5f13c06e</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_Interrupt_Unsupported.h</file>
@@ -13473,7 +12239,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_LineState_Default.h</file>
-         <hash>504d4f87815eb9d786f665502e4deeca5915d5528afe1040d3a24bc8bb75ab74</hash>
+         <hash>6dde5b7b1e5e2c3c4bf9053e53b64b4f0f7597a561b6db5f1540e3dc4c0a57fe</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_LineState_Unsupported.h</file>
@@ -13481,7 +12247,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_PullUpPullDown_Default.h</file>
-         <hash>de6d8956508c929e678a025c6f2929cc2a7197ba99f88197a233a19ddbe0b7e4</hash>
+         <hash>91888a2163e80768e08e877795b0f59fe6af0f442b14ad1a0b2438885b06d4dd</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_PullUpPullDown_Unsupported.h</file>
@@ -13489,7 +12255,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_SessionValid_Default.h</file>
-         <hash>9f80a608c61a9be62e91f7795d82a1dac715f81d3e602b7ada564123790ba9c1</hash>
+         <hash>70d0d4b185b18d6f81b9844bec6acc89d714995b24b07570edfdd04c8c53ef1b</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_SessionValid_Unsupported.h</file>
@@ -13497,7 +12263,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_VbusCharge_Default.h</file>
-         <hash>ed2624a34fd52cfb588a6a272fe943c8d438afab05aacbfa9d7dae85b8f26473</hash>
+         <hash>88413e2d8d44d77abcc75d91d777d8b28e0d27d78504f4e517173637e5018a5e</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_VbusCharge_Unsupported.h</file>
@@ -13505,7 +12271,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_VbusDischarge_Default.h</file>
-         <hash>4f3e542bcd7a9a38ed3f8bd43955aa0d49519e936106e2a99aa68dce9ca08468</hash>
+         <hash>fdda2ee84f05a20177d741a3320e20572247f4b027168c3b982263073612a581</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_VbusDischarge_Unsupported.h</file>
@@ -13513,7 +12279,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_VbusPowerOnOff_Default.h</file>
-         <hash>d3da004450074c0a2e1a75e2930d5664a8d59aa9a6776354050deeaca535229c</hash>
+         <hash>d974156bde567bf7013c6d4c87cf40d81afebfb1c23035f63771068ac1002765</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OTG_VbusPowerOnOff_Unsupported.h</file>
@@ -13529,7 +12295,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OpModeSelect_Default.h</file>
-         <hash>594d7e665855cda6d399195eafb79cd77fbe93c7d991f223af2eab78012b4b45</hash>
+         <hash>e7402741c5b25f1f0f17210574aa0517f088e79b5db94023a161fe7477917b5b</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_OpModeSelect_Unsupported.h</file>
@@ -13537,7 +12303,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_PacketTransfer_Default.h</file>
-         <hash>65556c1467bde784c8ac8193897fcd92f24567c71866ce7596492c1d6c0f3111</hash>
+         <hash>de182c8e1b9cb89fc420b6cd2acb2e762635103303b872833b31a4b137460375</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_PacketTransfer_Unsupported.h</file>
@@ -13549,7 +12315,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ResumeSignaling_Default.h</file>
-         <hash>cbcfcdcfb7d8eafe626747edfe731ee81791a0b8af56bb96781b63c6aec207fc</hash>
+         <hash>9efc2b118f10c62a1bee649abc2574078b1424013d460df290291fc79f40a137</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_ResumeSignaling_Unsupported.h</file>
@@ -13557,7 +12323,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_SOFThreshold_Default.h</file>
-         <hash>b66dc479ba00c5293fcb5703a3f78d1126bd23e9d67c63972fcda0ae3b91b2c3</hash>
+         <hash>e3cc9f602aca227bc671c04c9397b67567736d683993fb632fab5aef63c10e9e</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_SOFThreshold_Unsupported.h</file>
@@ -13565,7 +12331,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_SleepEntryGuard_Default.h</file>
-         <hash>56420066e69a153f6a290d21654ef708dcf476d4103a82a997d790a82530d3d9</hash>
+         <hash>c14ec9e3e6415c098c5b9fccc73c3719f5ff68fb0cde770bff3143c7560cd9f6</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_SleepEntryGuard_Unsupported.h</file>
@@ -13577,7 +12343,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_StartOfFrames_Default.h</file>
-         <hash>ce631da8741335977668fc01f3e69c088ee198ff668ced341b6a60fc102742fd</hash>
+         <hash>2ccfc5697e43bcad3ed36f13d3aad4f30a088c7f0b591ef8d7729af197e600b3</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_StartOfFrames_Unsupported.h</file>
@@ -13585,7 +12351,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_StopInIdle_Default.h</file>
-         <hash>064269ea4e830d3a5cb57356a7c250478b0d2932d26f41c73044407907fb09a8</hash>
+         <hash>ccae27c87d1badb88a41bd6f92e16ed55dac02c27f8b7618ba705129f28b3916</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_StopInIdle_Unsupported.h</file>
@@ -13593,7 +12359,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_Suspend_Default.h</file>
-         <hash>b03b0202279e7c97809f428ccd4b393ac928cf0828d8d2f9806513d44310aa0e</hash>
+         <hash>f9583d1a1228fe79906160ed90c2d70e36a92abde39a584d1efe3bf441c642be</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_Suspend_Unsupported.h</file>
@@ -13601,7 +12367,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_TokenEP_Default.h</file>
-         <hash>c0cbc8dc7bdd8a67dfc6971855cd9adb430a61591ebbb682f092bb9280e4b5fe</hash>
+         <hash>1775996c082b3ea883fa916df19fc92e40ae3039c98390a54f4a91ad13442041</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_TokenEP_Unsupported.h</file>
@@ -13609,7 +12375,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_TokenPID_Default.h</file>
-         <hash>7c919c1b7ffb0f0b1fa00ddac080bc9c9cff127c8439ae5ea65c0c16e1df197b</hash>
+         <hash>75cd4ec32e6b191032096c0b80d1f9456a541414530a48473e3e18469f39eac8</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usb_TokenPID_Unsupported.h</file>
@@ -13621,11 +12387,11 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\templates\usbfs_registers.h</file>
-         <hash>246b77d5aa44e328179071cbab3cc45f8475881a5512454800b58ba52da18192</hash>
+         <hash>84928d1983780aa438a32c46c2412aa5bd75419751557947bdbb23a414121949</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\usb\usbfs\src\usbfs_registers.h</file>
-         <hash>aa30cbc10679b2c36aa4ae872ddfa123aa2c490d92d879f2dc530567360e3810</hash>
+         <hash>3ab3a9a2f834f67d2cba41b6179be69ee25cc80b9422a8e6c6aa00e0377cfe2d</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\driver\wifi\pic32mzw1\drv_pic32mzw1_crypto.c</file>
@@ -13773,7 +12539,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\exceptions.c</file>
-         <hash>e2fd9e990c04c36dc7a93ef49e819ce0ea8c6a5ebb8bbb21a40955318ddd2118</hash>
+         <hash>d8d867098b4578d1c8221d25728bd2ea5d88c688fddda30d355fa7a5fb952de1</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\freertos_hooks.c</file>
@@ -13781,7 +12547,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\initialization.c</file>
-         <hash>ed83e116e1d5c95f12dde6baded6376be0dc86f2e5bf0f0e87481da96c840493</hash>
+         <hash>3f38837e222e9c6bce87a520226fac4c12a7931c0bd7ca375d45c0e27394560a</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\interrupts.c</file>
@@ -13797,355 +12563,371 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_basic.c</file>
-         <hash>09ae33218c050d1612d8dbc5eb0397707940fa9087c048e8cc5e6dbeba93797f</hash>
+         <hash>176ed9229b793f7a3f82e33eceb298cf11bad7cdbef22310a402f5333e259fd8</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_basic.h</file>
-         <hash>c2630d23b56bc3e4a58239ad9f4e611c76ffb40726e66bdef68d67792c449f74</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_bool.h</file>
-         <hash>294122f5455e5d441bee462da118e726482739a9a23ab9be495aaa4775a33b31</hash>
+         <hash>7c6fdbd7573ada494429676a90015dbd2417fa7fdb4505353e02d0fa000c20d7</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_cfgs.c</file>
-         <hash>f534b8add605a18d5e44663831a9661c03d8ce67e3e3ee5df000d3b6ab2b0354</hash>
+         <hash>aa67b93096a3d786c10d0b661ccecef3b06029e667a76d3667841edd065231f8</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_cfgs.h</file>
-         <hash>673b095e37545ff7198ae8473e3a1fa5b28111180794fb92b9569835b864fbc3</hash>
+         <hash>6e482117c2728541f4bf9787897ae27d6a1f1860d6d184e7d85a4470e94da3e9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_compiler.h</file>
-         <hash>b977e135fcecf5f3b90c4548d62e47f9f83c0df9b3f91561c267e1962d0bfba9</hash>
+         <hash>1fac90ab145b28f0e87ca018b7125197b25c4f0f27364cc0aff68b8e551230a5</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_config.h</file>
-         <hash>85875cb35c385acf2fa7e5828c2c7d794be6668963b4178def9bce073c859a13</hash>
+         <hash>2b59f0a6c5388db81d45ef4329daf94cef9a5816d3a75318eaf945d8c642825c</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_config_check.h</file>
-         <hash>834953241a9711bc8f6921abc9f4fd1958439972f8e415921c6faf36796fa349</hash>
+         <hash>f42e94da5b5e167d46c9cc04cd83b246ceb7b56718db88e38820c3b04fe803e4</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_debug.c</file>
-         <hash>c0b37f2957728461706afd48baf8c7e281263b50cfae9941a84aa53ff98d73f5</hash>
+         <hash>788a7ba71258e981a0e210330efdc9d217b02edbc0506838f84e2f4e6ae0c3a9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_debug.h</file>
-         <hash>d4fb6c25a4c2e71da2bfc15e6473175d2e5e4d9ba12f32a1307d3bf610bbfe45</hash>
+         <hash>23a0ce23d39560842fce8c7ee682597744df8876c17707c9fecffa74e05089de</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_device.c</file>
-         <hash>d502111437f1307c81dbd8f0d902b5813ee4280d111cc7e76b17d688f4af396f</hash>
+         <hash>1a09b3ec98ed314f9073be687a5c76f913b57d145205e868129da98204f31cd1</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_device.h</file>
-         <hash>3875f31bd83750298c75aa0c24bf52cd2151369c149bd9024b1aa4449026f206</hash>
+         <hash>73e94fcba9d7070eb4ed7f4ea098756a5a2142ba2fffd79c9244abc793346756</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_devtypes.h</file>
-         <hash>73635f185e9e767f3afa11c75890b92ddf85959751ed91d6ae38bd3fd06e0df1</hash>
+         <hash>c72f47144b006c73bdef6bdc751415fac1f44b60ee2b7506400446f6b5256edc</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_helpers.c</file>
-         <hash>863e6709b5dd11f8f9798f526b27c04e37feb59d7f3e67b933ab0ad869e7a5ad</hash>
+         <hash>ab593ee83c2b0f823a8c2df3bd54d1e767fcedc2b40a34479a0dd0e48cec5a33</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_helpers.h</file>
-         <hash>5aaa9b5d44fc35a3a525a8b88aed652a42579465ead77337edbed1ace19dd41a</hash>
+         <hash>314c02699202976b697bb060a3a32d97509462c008f627ffa1d3f28966a0a6d9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_iface.c</file>
-         <hash>cb572268014982abf7fcd1fa4aeb32ceeb6778aa11bcec54fe344a027cbcc821</hash>
+         <hash>21b6812f7b53af3de7d61809fe4aee6ee46f96cf9938c9e76c9f1c5e54acac20</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_iface.h</file>
-         <hash>771502561f2c10faadec29f4357e2d10aaa263997d5db8ff978e230cd8b9a3ac</hash>
+         <hash>4f97ad38171083388080b9d5c84694166e703266644764a40d63b61806840b68</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_platform.h</file>
-         <hash>626fdb51a75dc8180c1e49be01a19bb4310b49f0c7e13a0fe0e80b584c49351a</hash>
+         <hash>740a07d8ee7edc6eda180474bc9d60b3a4fb11afbdddfd9ebfa26cb64278989d</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_status.h</file>
-         <hash>21adf317355e8bec5bf1866e683804d1bc92e9e3caf04e09ddf3b57dfe1dbdc8</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_utils_sizes.c</file>
-         <hash>5d2094f034597dbc48504fe175d11e6e56eb714b464e50a7ae472be763038c8e</hash>
+         <hash>63c9129875c2a148883cf9bba5ee6766cc40b585cb7eff8b3ec7503a5355f5eb</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atca_version.h</file>
-         <hash>c2180ed044d26bc957a097fdba22494fa92657ebfeec5b9213b8d8b1ac00209f</hash>
+         <hash>cbbb9c381e8c189d7c0ead854ec697c45f210a041395751b79d71c3a866482d6</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert.h</file>
-         <hash>0a15c758150903a9258446a73607b36003ec7a44b8a639ecc3d7702043c775c7</hash>
+         <hash>f5cf03eb1dc1a2a2bb2e554407ec4efd7242421e812d0f92a046af40cda1b57e</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_check_config.h</file>
-         <hash>6c3873e130dd4df815f9e4b4359adf49476df15136f910f48dc9e5ccf8798335</hash>
+         <hash>511f2b5e0da2addd3e6e26f70b5af09a110f11b901f986bfd8191f74e037e7b1</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_client.c</file>
-         <hash>2d8ca36b525a172c80b4409b3e056a60223afd0472e98b1b143581cacf0d8450</hash>
+         <hash>645c03b52271f8b07b7957b357366ed07e645ee2e0a7634731aa3e7b4fd95316</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_client.h</file>
-         <hash>01b358bb131c3e771c1a0f248db4d15753f7e4bf511407a2254f05b4f8186add</hash>
+         <hash>bd9d25ce5f05393fc56856b6158dab6cf21b2a42e7c21f237fd8e52957ac924b</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_date.c</file>
-         <hash>b5e56938d057e54cc95c0771a8073b479a60ec6c235c12c1cd8159452a2c11bd</hash>
+         <hash>4fc23436539bc22c77c6762df73bb9fbe919b88937e58b8dddb26512e8fc2f03</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_date.h</file>
-         <hash>207572680c441bf9d2874d54c83d5cbd46d5df712aa1afa3be4a3729c79cee82</hash>
+         <hash>860fd2120efd5f46f9007fe95addb24a7e322eb5f79e62243c33054d34becb80</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_def.c</file>
-         <hash>d5cbcad53fb4823be85937ae552f837ef0454025f27eb6a4ddc0ffab48f368c6</hash>
+         <hash>ef0cbee675eda9ebfbe8da0ede025aec9e93c3ea49e7fbc428377bc68f763913</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_def.h</file>
-         <hash>b71f2998e92b947dc988a89e63e65440570def8d4cbf4cc5a7e3c972bccf5019</hash>
+         <hash>bb6b6a355cba9fdd961ffc2f97cd8ba3c90957023c4581ab3448fe4a96d8158c</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_der.c</file>
-         <hash>c6b08c7a72339ff2f477f0b19ca6219ec34992abeff4778cba172148a1124ecc</hash>
+         <hash>2ccb7a4014ff2f25d70ddabae89d4b459eef9cd43c946366efc70f69f11b18ae</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_der.h</file>
-         <hash>6435be7390058ce80ddb1eeee63f780fbf02ce5b9d218641ed25be983b910264</hash>
+         <hash>26e739d4476582bdb13e10f2c540e2412d834c4c719970b9027cf4fa97ba6bf0</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_host_hw.c</file>
-         <hash>f29f9cdcae0f9b5ee0956cf22ca577d6f5ad7d9f467a374834ce10c9865dac16</hash>
+         <hash>c9896a8b0ea6f8dca4435c9c16c4253da6f6e356a4ebe3d213ddc5a3b2601c22</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_host_hw.h</file>
-         <hash>61081571372015c4c5114c5e587589d0f3e35dddd74c6d0793b00f943147f991</hash>
+         <hash>2ed95e40df007df994226cae1d7e6a727e639d741c78d5d9b3d456d619abce5b</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_host_sw.c</file>
-         <hash>30f69dc795dd4e0a3f0dffaa6675a9251c51643f575edb4f47aeafc306442448</hash>
+         <hash>2af2032de201a8353b065305972470826afdbba2ab031ac19fd9911d223f3c6d</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_host_sw.h</file>
-         <hash>2073d999312af5d2d04d861ee1d993315146cca024dc70003877fa5b785a25ec</hash>
+         <hash>9e6e3c7b9551150f19578e379d2b2b201473755832de60fdc22f42844a163e24</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_pem.c</file>
-         <hash>a2e782b895f7a8b8031eb0a6b3d3f3323ae28a1a7e530c6cae5b8105585d4609</hash>
+         <hash>5113ca75a23201f70b544f6acbea15f7c0f4cbf8c317709c5f80a63b25087f12</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\atcacert\atcacert_pem.h</file>
-         <hash>237ea45120776697a7c0700826914c3e2348743ea18e5c72a8e65881c340d220</hash>
+         <hash>2625b1781e9b4c164c9b3a71263e5af64650dc8a55d8cf5acd2f63829ec4fbaf</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\cal_buffer.c</file>
+         <hash>a8d7d1a9a19e36e0cd59aecab2dcd646eae8a625674dc2f2d57d3c59c3ee8a2f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\cal_buffer.h</file>
+         <hash>0ab87218a08f533b6c553af3db3c10a6d59ab59a30247b3f9025211235bada4c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\cal_internal.h</file>
+         <hash>b50da1827d6ab6714ed881b0aeebe4cd876550f7d204b01c9041d6d9fe034199</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_aes.c</file>
-         <hash>ece6a240f1046459e2f2a5d0c9b45e67625904e84d220c91a849e02425eeebba</hash>
+         <hash>02a7372d0b550c4b869cf6048bc599ed8126b83794cbef5549a68c235d2983ee</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_aes_gcm.c</file>
-         <hash>21fe25a379ea8dc21b9078b08eab8a1a17e10154c18f3f55f9752aa8a5ead956</hash>
+         <hash>706a00b92012c1c413290cc617728663ea5d1b9d22014236aa54f5f3990fdd5f</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_aes_gcm.h</file>
-         <hash>4403b396029c55cff7e5dcbfab6962e2411c5afa7645b164268c924c39e4ca47</hash>
+         <hash>066b41d4729ef3f29f7c67aab9a28d83c75339f1933c0fa6acc5ef8a47793bdf</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_basic.c</file>
-         <hash>259de4446b1b8761c7cd7141a1b7a8ca8ad23d12ded39873cf8f475ada88d795</hash>
+         <hash>8b524220c4ef6237a01b6e63724681feef12120810f53f6937c8f789312319cb</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_basic.h</file>
-         <hash>68e3b9d31bf9027e0f5b5dc84832416129eaeb154f3fe784512088741953221d</hash>
+         <hash>7b6de15d263bac005047f78742c0461c638c7acf17f08077d165bc4f2fc93f56</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_checkmac.c</file>
-         <hash>9f390c0afe5addc80449364affc260481e8444b693f2a29b63e000813514a99c</hash>
+         <hash>607d17dc5723845980e3339d5ccee110adcbfe2654623bee5723b886b830c55b</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_command.c</file>
-         <hash>da491045ceb1f856ed3fb0c74f1d7c06a23ac9e4fb49ee1f470415b3bc79488c</hash>
+         <hash>2e14bba208958cce14118a453e26eb0de8261e3da7d11970c941029800c2b4c5</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_command.h</file>
-         <hash>5760e37470f33b7e97c6cd99d88407e03acaf221c000d4af5bfd976056461b8e</hash>
+         <hash>090c87c4b325017908ee36293b9583d56a7f3133dd765252151b7c3f898a8716</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_config_check.h</file>
-         <hash>d702af64983babc2cf0e0c21d2ab3fcf330ba3455d0054d60cfdaf75cb8acdfe</hash>
+         <hash>552ba9e21c44f66db4fa3ee7e431759b2991b7149c40f81841e7aa900892ed0f</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_counter.c</file>
-         <hash>180fa50c9ad63b53664136264882853cfba6d79ca45b64689027bcf33fb3298a</hash>
+         <hash>34af419572057537cdd6f459089781111f7dccb1448f2c7fc3b6ec746019cf30</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_delete.c</file>
-         <hash>dfeda9b94ffde5cd3701dd197941dfa0b3d24fb016d4b670a276d87004d25c28</hash>
+         <hash>0dc3219dcb6201a1829c9ec8aa111c7a4204279fccb9477780153535713e961e</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_derivekey.c</file>
-         <hash>53eb876df2fb2c8be9b616b4e4e1a621b975bb7ded96f81c144ea9b89077eb86</hash>
+         <hash>12429e7a4fa915494ee85bc72cc35436b67c19bb0bff5c5472badf2c637da209</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_device.h</file>
+         <hash>69c13dbeac141a1def1f0305ca3c44a2d2389b58c359ef256ba70e0371d9764f</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_ecdh.c</file>
-         <hash>e7c5a2b1b5d88a913dd452c5c21981446c9a71070913445112321f6fe5404d92</hash>
+         <hash>3ef13296c3c6c243cfd60255a24bcc8b97d9e47f839e36bdadc14603b9fdbb8e</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_execution.c</file>
-         <hash>e5c65c8b4e51492ce9c3894cad905663b1e57fb14062c160ea2ffcc6158d89c8</hash>
+         <hash>00d8a5d8e4bf6cc092a22e7e1bb77277a15167957f14f5d95a49d1683dca96ca</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_execution.h</file>
-         <hash>44e5f5be5fd28f8da1c3be886de9942ff85f50988f0e7c460957d9278e9e6d2c</hash>
+         <hash>2f50196f281b4fa3093bd665da8b07878ca6b3111c4b947b9e5d8ac29c2d5394</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_gendig.c</file>
-         <hash>11942e9303f425ee3d29546c48a55ef0da972ec6bfe0bcc09e374efe3feedc9f</hash>
+         <hash>851f30ff84e747fede62497aa69a10ebcd4afeda866d1368a81056ecfcf19d11</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_genkey.c</file>
-         <hash>e1abd45c2eb9472c442c63e74b4b302854fd2b6b0d3cdc15829c5f2d7c6302f5</hash>
+         <hash>952adb9ec597e9dea8bc457fdecfd4862cbf51b682e671b12aace57b3f36c774</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_helpers.c</file>
-         <hash>c2f9943f15fef1e5f740bcc3903a36febacf11d5dfbbb26decffb71177411a15</hash>
+         <hash>9aedd57b43aa746057ae4d1ed8443bbdc84bc62411fe93da6986c39376b099be</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_hmac.c</file>
-         <hash>9c8aa0411a9ebc28417e982c23fd4df47cc44851dbe4ad5d0d09ee6e56dc82c0</hash>
+         <hash>5f3c5a7b1a97e5feb066e6f410a80070f8387c7a8637650403ae9749e43adae4</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_info.c</file>
-         <hash>3075983e542a5eee3c1601e30eada9d80dac4244062ec18289003c1f69ce5863</hash>
+         <hash>9742bd5cf0681ba90c6426d6ac365c09aa66a437074e92b53735be5525ade7b4</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_kdf.c</file>
-         <hash>a9d4e86ce667cf27fc0042f0f82f6a6fe4c12a5f9c25f48eddaeec4baaf86e20</hash>
+         <hash>c822afac61c51f480b9241ad83a8a64adb5e6f291a70b74334cd71702995f3b6</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_lock.c</file>
-         <hash>5c3f92956088ad62d329346eb16b060afa144a5387f187a3d7479665e0c972ff</hash>
+         <hash>8d99d9b2a31c098c706f4b7c9237e383775e2c6bb384b0873d2d7e14d4d3d0f5</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_mac.c</file>
-         <hash>668d49ca552953da4cce8c5c0c6d514c0fc81fe8011acbc65eb97398cb9265c4</hash>
+         <hash>e8990ef743bdad3436f6a0616737f70132ab1c72ecca4128c91a9f2b03a83ec1</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_nonce.c</file>
-         <hash>fb487f2f60f989a417e8e62a2ca1ac8913d823203c9fa43142c1fcf87001f4b4</hash>
+         <hash>9ab6b6eca10558774c558e2926fd9f9f276fe1f9498aa725bfdfd5b60c3178d2</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_privwrite.c</file>
-         <hash>278fbe9acd9bd2e3cf987388db9e71529eee2489504171d13a645eec9dbeff78</hash>
+         <hash>aa1ce3ae3cd1c04abe9d0def8ac4c21ee650e7fdce5fa4b139221f2a492018dc</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_random.c</file>
-         <hash>7e325853a6cbda47912d760041f4e869c4c1bde456b52dc510c97665a7229b34</hash>
+         <hash>559c47923c28bb044ab1dd605bb17593e974991e663c40e4a67a13e73a87fe90</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_read.c</file>
-         <hash>0bcaad1b579329190e9bb0178f2860336f045452dd70622a93e8fce32f798efb</hash>
+         <hash>9e8b896fc7c785c1ac2be72027618505345451eec27885cff22cbaea50d56350</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_secureboot.c</file>
-         <hash>12c960be28a7659cf503685cb1f3046c452e153676f0eb24566dde4c8dfea84b</hash>
+         <hash>6d81904adea14009ea38dd6f57828f2071c19d2b370f115a8e07a175ad1ed6aa</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_selftest.c</file>
-         <hash>bc2712bb9a53f581b16dfb031fed82e46eb8ae3f385be21d87affb44e8bdaef3</hash>
+         <hash>eb5f8759f66aac13455e1f782ed1985c65c0a324e7c68b22f48305f7c0637a6f</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_sha.c</file>
-         <hash>12eb8f7d95e05491a768fa3a44f8c9d3865d8fcc4091fdbf14108d5368e9f4d1</hash>
+         <hash>e8a51f77b75d3bb947a9afe155bac628dc9ee566320696573e80ee985889549c</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_sign.c</file>
-         <hash>2abbacb8632c2c058d64b42cb0bc89f0072698526f09889f88fafa44afce487e</hash>
+         <hash>874998f5bb37fbdbabd6f31e79cd06dede315fbd6f72173d66669782bd8f313b</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_updateextra.c</file>
-         <hash>e901a5da37ac1fdf622b3acf81cc59eec0e6f495b2f3e4790333297d03ba8136</hash>
+         <hash>aa978213bb4eb62d16095a9972e45ce920062ce620ed7ad6a5a67e1613fa2513</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_verify.c</file>
-         <hash>5dedc521774cdad9590d9c68c475d961a1df92f4ecf8a49d18f478fd352b67c9</hash>
+         <hash>6ae37e65533d5426e1c1b7808ec088a9c0de02eec2129788d8bf34b1ea021cf2</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\calib\calib_write.c</file>
-         <hash>c6362ceb2f111e34b3c12d201de125c08f23c9f1416881c21ea676e6bf9a5bc0</hash>
+         <hash>95ccc3f2df0281170a4e5bdb7f757114e73ddc71cf6b2a149588d2788a5682df</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_hw_aes.h</file>
-         <hash>fe60d8122ebeea88a71105cf616e54452f05c66d95033c9a8e75a647b769c6a5</hash>
+         <hash>d1ea30731a8f2161675d6a30177130315ae42313e3c902b806c0ccefdc961945</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_hw_aes_cbc.c</file>
-         <hash>da8567d7acfc77f9c606cc0af6110f5edcdd1ea964eb773b6c5e36fc36182c1e</hash>
+         <hash>54fb1f0d1306ea7709cfd632042836915ab413bb981e86574831e98b943f1297</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_hw_aes_cbcmac.c</file>
-         <hash>b03de91ce72cb172d4b60934626fd5ce7a5f22242b72c82cd24f25db5b6e21bd</hash>
+         <hash>e055a8b98b6cacdb0be0b95124f1f23d78d763e26e5cca0bf3c3e0e0b8e609c9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_hw_aes_ccm.c</file>
-         <hash>358f9a4408870e4118e6e9c7341a0aba68734030de67559e5fe95439a3d6d53e</hash>
+         <hash>d67489c8547af8805afa7c7e646e885dafe730665ae003456c386e1517c3161c</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_hw_aes_cmac.c</file>
-         <hash>44335ea2db3dea6b4c4d6132eae05018c9220252b02153dd2eaa3ce906c83406</hash>
+         <hash>7267bae25bea2d70766a3229c1f8a8af56f6aaa18d02311fddf6d4d3cb1e3ce7</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_hw_aes_ctr.c</file>
-         <hash>bfa535f09f5b6c3e285b1ee35fb8555fcf419fa76a4396f0602db37e683657f3</hash>
+         <hash>6073958d9cc6a66b1ccc4419f957b4adb05dabc97da417a11ac4260cb43e0555</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_pad.c</file>
-         <hash>1e2af6e4f27de4c652b16af897210737cf352a9a62526e7faa9bfbf9fbf244d1</hash>
+         <hash>8c59e1290964ecc5f7292f25ec4e6317cb5a5a33fecd27003847044420aaadba</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_pbkdf2.c</file>
-         <hash>c6d821bf02c4654305bfda71f6c188f5183898e6968e8a352206aad5fe6fbd48</hash>
+         <hash>5b6a0d4832ab2acec4f6cba4eccf23e7e9f59a8a553461cca07312a7903951e2</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_sw.h</file>
-         <hash>b1e732ad50cff0c446ad33555ec9b2e7fe46ae8c2efd31bb008e735e666be87f</hash>
+         <hash>6e6304b476495c9620b441b54bb163896f09444b470c1e60b9941aa4eadfc33d</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_sw_aes_gcm.c</file>
+         <hash>af7b8ba98b76953a7b4fcce58fe468b0a217cf9171789ff27064523a57a3dcf6</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_sw_sha1.c</file>
-         <hash>0236326e2c5d753c680b97edec372959715e4de1c741ccb2e73857a404e63507</hash>
+         <hash>44ebf4b7211bf9ebc5993fca15645469de7017c8340cc26382a9ac17430f8dcd</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_sw_sha1.h</file>
-         <hash>7bddc7b3e909ad2428c1d926ab1964ca7c4e28b1206697020e6bc5af0c282734</hash>
+         <hash>d0b9a078037ad20658119910aaa7a0ec7a62acf6a5cced01032dbf61addccd32</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_sw_sha2.c</file>
-         <hash>278c845e52b899df4c5c068e5707aff0709f487d048e152f608bc7e8a7b7d2a2</hash>
+         <hash>5561c4d66b050f96b5535dbcdf738087665e27c12540dde842ccd52e39e60ab9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\atca_crypto_sw_sha2.h</file>
-         <hash>23b69490ad19adc8ce7aaf9b8ca94cf9f8f8f36551c0f752ec65eb5f6ae9bb4a</hash>
+         <hash>b8bb61680d10039c297e78c744140aacad6d16426afaa28afdc358be1f80b4ab</hash>
       </entry>
       <entry>
-         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\crypto_config_check.h</file>
-         <hash>67b3815a6a65a02bc7908554172d99bca7752f2ebc6035ebf185920f38ec195b</hash>
+         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\crypto_hw_config_check.h</file>
+         <hash>c69135e7fb7e5bb58a4798c3924ebed32203d00dc9a79e2302f3fae69e629a55</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\crypto_sw_config_check.h</file>
+         <hash>bd030be2e3878eaf2d9a3d77ac0c91d3571497636a3e8abd8a7be66189396198</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\hashes\sha1_routines.c</file>
-         <hash>68fbcf4031f698c118566173d56c035e9f51c1fb36098653dfb6a5b3874dbc92</hash>
+         <hash>9fb6e15e153c065be65424ae442a65ce73f750ef4772e4e9412a27bbf43f1a44</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\hashes\sha1_routines.h</file>
-         <hash>43354c86a495d7da658492676e9fa63a36647684c9954a63b6e3178346f1e41f</hash>
+         <hash>137021bbf1f5524ec603c82c83b918ad9a7f64cd6fb933477b7cbd2949554557</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\hashes\sha2_routines.c</file>
-         <hash>878a312fa61d40739ad8a5d55e38740d2a03ffdef59134f1671292fab42d1be3</hash>
+         <hash>7c461e3e7df5ca30ccce35c454468bd8199a8e7c98ea8971bcb83bceed866037</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\crypto\hashes\sha2_routines.h</file>
@@ -14153,7 +12935,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\cryptoauthlib.h</file>
-         <hash>f7d040c906bc7c471558d2110ad5f87ac7b8986a96d8d0fa75dc1651167fcde4</hash>
+         <hash>07e550edae78e4c9b917be4198f6100c5ce027f0a83e55e150664d71a7b78d82</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\hal\ATECC608_0.c</file>
@@ -14161,15 +12943,15 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\hal\atca_hal.c</file>
-         <hash>a776ec795ffd66189d56ecf02b6e32052580d7c74ab7c8eb84473410806cf2b9</hash>
+         <hash>e197f64670d297ea433499ab7bb61752542a039576b9ad879124e410aaba6122</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\hal\atca_hal.h</file>
-         <hash>9ba44e5d6b7e187b287c0dd31dd2bed0da1724f0b2716c15e980b5468af2f103</hash>
+         <hash>3bdbfb954f7f284d168a28b5dae52442d5bf76de6145b1075206cd837ead8c95</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\hal\hal_freertos.c</file>
-         <hash>599599d0940b2362aaa4f0092316fa5ea4e2107fa22a0bce08703711e3fc811b</hash>
+         <hash>7a324d3f1232277cdef9d9a5a6417fb638e303289a584b6403f47eac265f1572</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\hal\hal_gpio_harmony.c</file>
@@ -14181,7 +12963,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\hal\hal_i2c_harmony.c</file>
-         <hash>3688a406578e38ebbe903cd91e1c213e5b4ae2eb8937ee79169a67ab5d18f57a</hash>
+         <hash>336f1d18acf1462af638d06b1aa8056f2f2c52e68b81c3888f8b2d395d28fdaf</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\hal\hal_pic32_delay.c</file>
@@ -14189,43 +12971,43 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\host\atca_host.c</file>
-         <hash>2173bad21da48e8df6a817789d7b7553a01b0cf7edb2825ec4298696b45462fb</hash>
+         <hash>6d52c94ed9f68f981424935eb7b1af05407fb836774190a2e9d3528e98312bbd</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\host\atca_host.h</file>
-         <hash>1f56d5cd068b53db41147ca9492830b859ec48ff084217107182cf3d0db02591</hash>
+         <hash>52fc8a339c60865109abba36596865fe0a47fca8cd9c4af0c58d69b0075c1204</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\host\atca_host_config_check.h</file>
-         <hash>aeb0900e4230fc9d4e851c195aabbf36af2e24d6888e53bcf90795e987da155f</hash>
+         <hash>50ad9946874fb50f12d9292978d19004928dd253d8a236f8275999122e92fcf3</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\jwt\atca_jwt.c</file>
-         <hash>657829776fa4cf35bd3ac4df9cc707bac294dffd73d263b5ed06d88f265517d9</hash>
+         <hash>71d6317e18eab3b9141b4bdfb757a75ece0f248af5fdd8272ddbe332efbe76f9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\jwt\atca_jwt.h</file>
-         <hash>474562055657d29505a2fee41428e4b6c8b52e2109475bb8ae041d4c58831d35</hash>
+         <hash>ad9eda3bb34f8541abf291e320e2c6e715c2456b7ec1cc0895565f150a278234</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tflxtls_cert_def_4_device.c</file>
-         <hash>6ed899e259f16301bd83f6816863205698e782bed6f24eaaa6f84bd4f8f8a5f8</hash>
+         <hash>8b57bbde3a2d463e5e17b667bd0ef4e5bf6701f77fda3cf029b92d825cd1a627</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tflxtls_cert_def_4_device.h</file>
-         <hash>02e656f0627ceed96c9918807cb5e2c8d7d0cf1e105338aef97fe4631388032c</hash>
+         <hash>c2386bb4e5c22c21ffe9d664243942e69bed7dcc9483d9dbfd41050a48318350</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tng_atca.c</file>
-         <hash>eeb7d44d2de688aae5a165cdbb4260651e30cdbdd2df243b301fc619be663c62</hash>
+         <hash>5e837c3f2378635d2018931d524f4a508eb518f95739c15f90d3d46b76c1685d</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tng_atca.h</file>
-         <hash>e7cc88d4d2851ad725ec1be011a3eae8681357eeeae0533915dd2eb1910f825d</hash>
+         <hash>95b97fd37063f187a97d6da6c3dbd797a4570c76910361310755554257f20bf9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tng_atcacert_client.c</file>
-         <hash>490d3b997008176a8264da836125aaa23b426dfb106b9b32635b82fb290f1e4f</hash>
+         <hash>f41dac29f5a8b262034694d9eaa929a5a3adde6551815a070f6c285edf6968b8</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tng_atcacert_client.h</file>
@@ -14233,7 +13015,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tng_root_cert.c</file>
-         <hash>67fa1df2a3ff1bae1d5ae2a264271034a15524043de0ae6ce0be7a48d4630f72</hash>
+         <hash>fc1d5c80892f5b82d268347e49dd8ae7fddb62632bbc6536264486b123815ea0</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tng_root_cert.h</file>
@@ -14241,7 +13023,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tnglora_cert_def_1_signer.c</file>
-         <hash>b74a1acc146f667a6c76189ae641062fd095dc5452c392bb33a6f197b3e07cba</hash>
+         <hash>a20448c6a735e1a8edc2c77901c35b145deb5b6c7646a3c9b8a4649bf167a3d8</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tnglora_cert_def_1_signer.h</file>
@@ -14249,7 +13031,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tnglora_cert_def_2_device.c</file>
-         <hash>6c7bfd48232ff511d8135d048c088a418d8ebda1beafd9d94d8d459e6754b148</hash>
+         <hash>9720020cf35764b90cdd53a306669b666dedd887c918ae4ed72a56d15bf52964</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tnglora_cert_def_2_device.h</file>
@@ -14257,39 +13039,47 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tnglora_cert_def_4_device.c</file>
-         <hash>e23ec36f73877d1a99fd26f5f5577647655f0a67735e3ae51a77827890c26e60</hash>
+         <hash>3d0d4cff11e0e62b323c3879ea245211cb7470d831e5530ec06407ff4de92d38</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tnglora_cert_def_4_device.h</file>
-         <hash>920d4e0e34cdfe434f2124a5e34eec8cc9fbe709f79754544107215888ae7e25</hash>
+         <hash>cc9b55bfd85224f32010786a790701952696469f271f9b04494bca3a813ea7a6</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tngtls_cert_def_1_signer.c</file>
-         <hash>877e9efe4ebbde70d1c3d46251e1707f354b9dff6200219d0d5200bc22420a4b</hash>
+         <hash>0d2aa5ce260456d043e6ddcb9d3d1db751d8d1bdc8c18e381420485c50b722e2</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tngtls_cert_def_1_signer.h</file>
-         <hash>ca4b452150e417602a791c15869d7e072e5eec9392da33f1ecd0479a64972301</hash>
+         <hash>fd04167c1f35f118a06f052efc3ca483644e770334c994158195caf9725b4ce0</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tngtls_cert_def_2_device.c</file>
-         <hash>3e02bc9b4b7ce46b3272cedb5bbb93e160449c185e938d7e574f3dcdec9cc734</hash>
+         <hash>956c578cae5427a74b6c964a664d8d1b164aed71113fa5b01d9324a6872375fe</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tngtls_cert_def_2_device.h</file>
-         <hash>646a1312cfd3878a6d24b6c1d26850972727c8d53024ef226e631f74d06c2584</hash>
+         <hash>7910de8babcd11a207a6f7f5bc82a95386b58dcd11af6497db0a29b44fba01ec</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tngtls_cert_def_3_device.c</file>
-         <hash>44a5dabf48865321c0173771ac03f055a456bb00d21dab7b9bbdd75a2e1d52e5</hash>
+         <hash>3f32ed5f49483f703e8650d1e50e9a58ebdedd7d8e5218f93d95c79ebd1e3927</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\tng\tngtls_cert_def_3_device.h</file>
-         <hash>f18a6040eb5538972744eee0f4b0cbe3f9e2e710d7b3a59c546f4bc5d9024be7</hash>
+         <hash>2ec20ff02835095aca849bfea155ebe5036b2c28d700622f04bacf3062853f8e</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\wolfssl\atca_wolfssl_interface.c</file>
-         <hash>22d34c5bfd16c80457278a4a99c6f352515425aa8d59761ae4fb7e3c70de880f</hash>
+         <hash>3f8af892f2a4a4086b4da4be3619c74a426de35f446db70b1280e0ad1e7f3b6e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\wolfssl\atca_wolfssl_interface.h</file>
+         <hash>f1434e45300423b564b07b33d58d3069de0da0182fb767b976e5481a141b647d</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\cryptoauthlib\wolfssl\atca_wolfssl_internal.h</file>
+         <hash>c1ebd78d4ef9ec7b82d8875f1ae97c69168880c6f6deba548abb77ab657156d9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\arp.h</file>
@@ -14305,7 +13095,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\dhcp.h</file>
-         <hash>4594bbf9c37117583548d8a5cf7e54fb470b4cb60c5bd18f245b02f99ebf5f99</hash>
+         <hash>b4d999699bf15079ea9d3c907ac3cc77f3d0547b46b100413e58bc4530708559</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\dhcp_server.h</file>
@@ -14313,7 +13103,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\dhcps.h</file>
-         <hash>0c6459cf65d1c4da32a6e7b9f12b2edc9f525922411c2eda680e757d5e1bef0f</hash>
+         <hash>660852a6a642b29f23ffcdab88fd8931adc1acae051288691247ecddecc2d3ac</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\dhcpv6.h</file>
@@ -14337,7 +13127,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\http.h</file>
-         <hash>f911deb4198c712caf25ed6ffc749776586c0945e692fc222500fdf2a5cb479f</hash>
+         <hash>c624983fac1a910df704aea42e31de2dabf37e54f0994f36b945243d76fb69a9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\http_net.h</file>
@@ -14381,7 +13171,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\smtp.h</file>
-         <hash>474828e7dc8a204101443abf70a5b622986734367e430eee2db797d20c67620c</hash>
+         <hash>79268ea631f733be1f34cab892fb9bb0d6e956652f805e5e96fd7d557c3129ba</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\smtpc.h</file>
@@ -14393,7 +13183,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\snmpv3.h</file>
-         <hash>8c24aaa8cc60fedc4077728ac0a219ed7d921c39fa78bbded08fd3232f37609f</hash>
+         <hash>aceaa660e21a025148679aef5bebc1a162376392cf66736388dbe4bbecbe80ce</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\sntp.h</file>
@@ -14401,7 +13191,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\arp.c</file>
-         <hash>a61a82c338f7b8409f82bb3c2e1f589a7930680d3fc765a90d71f2e0805b4fe3</hash>
+         <hash>79977f34fd72ff71a5cd9c5bebd932d9cb5d5300a5b5c8a4a2a48e59cc006578</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\arp_manager.h</file>
@@ -14429,7 +13219,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\dhcp.c</file>
-         <hash>b38b2eccbfb16ee07f6d30f13390282ec84ba9e06cebb63ed58e9d0c9b9e5b1a</hash>
+         <hash>6b3d6614093d49f79903d2b9e68028991d239c40927414d42fbabf20fae2a399</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\dhcp_manager.h</file>
@@ -14437,7 +13227,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\dhcp_private.h</file>
-         <hash>23be25f5989fcd849e4690f7504f5321a326dc8e685c41d385f0ca6f1294af4b</hash>
+         <hash>239cf6740eedd49b616c0ed0d19a0e753d23ea39005ac45917cca0a739ea9c5c</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\dhcp_server_manager.h</file>
@@ -14449,7 +13239,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\dhcps.c</file>
-         <hash>2206e56866e8f045a6b2d6e4bd94c3dbfe377c9c21c8dc9d621cd1e6877bd19c</hash>
+         <hash>31018820b673c251a7616e1cc1917a09ab27e2afe0b182be854013db049750bb</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\dhcps_manager.h</file>
@@ -14457,7 +13247,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\dhcps_private.h</file>
-         <hash>05813acf368bf4936adb3ff2a8fe1a643e377d4552ec2bbff9259b49159e4a3d</hash>
+         <hash>5e8f0c30c2bc0abfe3ed2fd00fca8fa27f75980098f0dbc434ea793f4737497e</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\dhcpv6_manager.h</file>
@@ -14633,7 +13423,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\snmpv3_private.h</file>
-         <hash>99dce061177b8e4d7b6a2d05e0c9930184a5902e23e56b064927ffc38df5b7c2</hash>
+         <hash>2829d2d64b8dd0022f06f2dc93567cce8bc86c059130af2ea3028252b736a1f9</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\sntp.c</file>
@@ -14661,7 +13451,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\tcpip_commands.c</file>
-         <hash>6b0979407f65fe3e4a0345b59551018c84bd9968de00716b10f5a51d4c47594a</hash>
+         <hash>bd191b1edf0eb4e2b48c781c8563f0036033a7d4a33cc2fc49651b4b3ddfb589</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\tcpip_commands_manager.h</file>
@@ -14685,7 +13475,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\tcpip_helpers.c</file>
-         <hash>9a4ecbe2ef8d7d68543bc4c9410aa04a99908f902a97d52cd5f1f2666b97ab07</hash>
+         <hash>01c815b30c11e011d30a60761ff0586213695c7405416ab90e2aab3ba4f38154</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\tcpip_helpers_private.h</file>
@@ -14701,7 +13491,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\tcpip_manager.c</file>
-         <hash>a349da5cf9b7604cdbc2615f6e738fae4acef9c189ec3b82bf67a1d3b0b07061</hash>
+         <hash>e9dec6713d48442e6ef68c99982c6ed4e971dbefc8d5f008c16ee406a77c21fe</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\tcpip_manager_control.h</file>
@@ -14721,7 +13511,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\tcpip_packet.c</file>
-         <hash>db457403eda9d5500a17439f9a737d5d37d114b23c53a16c3db211ee65f06589</hash>
+         <hash>e0414e6148ed6f2f36c57a2c1e91c7d1a1c668e1a9d0ce45680c28e83ee759e3</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\library\tcpip\src\tcpip_packet.h</file>
@@ -14865,7 +13655,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\net_pres\pres\net_pres_cert_store.c</file>
-         <hash>f65259011da9c259e70938e1ee0b5332e5256aeba0f8806f9f53f16f673563e8</hash>
+         <hash>2f122b16432d7fcd63a83eaa783041bd8a8c5ca3a2000100644addd4d15f45d7</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\net_pres\pres\net_pres_certstore.h</file>
@@ -14873,11 +13663,11 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\net_pres\pres\net_pres_enc_glue.c</file>
-         <hash>a122690aaeef4fe662e7b189b1be81a4acb4b2d1de7051e7419bc5443608e3f1</hash>
+         <hash>7bdf85f3e35b6a43b64e415eaf6a1e6834dc1a218edb9a752f375bfb1622aa80</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\net_pres\pres\net_pres_enc_glue.h</file>
-         <hash>5eb376c102a5f02aedfe5e135a6305af301723b3de9f022658406eeec5bf4385</hash>
+         <hash>b72214b1c8e109404cd4fca86c0011c859998af6648babe467b084a6922992c5</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\net_pres\pres\net_pres_encryptionproviderapi.h</file>
@@ -14957,11 +13747,11 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\peripheral\evic\plib_evic.c</file>
-         <hash>14692a79b8a412d6f3d44fb016e889c3e13f7d932f40ecce36ca765001fe5bbe</hash>
+         <hash>5d6f81665b4f8195048a4252103dfa06b8059de4a97254146c7991a5f3192ea3</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\peripheral\evic\plib_evic.h</file>
-         <hash>900a247c5364986f9e67d1edb0961a68edc9e2f30f79966390d7b6589f827008</hash>
+         <hash>8a074d5bbaeeb47ec3513d806c2c0ca230eb082827be31255ee8376229c96830</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\peripheral\gpio\plib_gpio.c</file>
@@ -15077,7 +13867,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\system\command\src\sys_command.c</file>
-         <hash>e13dfdfba00c4c9b65ef425ae0a568913d754b64e58bda03f37627b23bf9659a</hash>
+         <hash>84360285206bc304af70cc0b29fea061345ba6e27674613b5bb947da9fda0768</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\system\command\sys_command.h</file>
@@ -15117,7 +13907,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\system\debug\sys_debug.h</file>
-         <hash>6dc7375ac05501951020122a9baa63e17e9331e11423c70c8ddd3c0944fd632c</hash>
+         <hash>aa94da8f32cbcb40672145542d149d077ff8f4b25c08d47d53e3d206d1c6bb83</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\system\dma\sys_dma.c</file>
@@ -15289,7 +14079,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\usb\src\usb_device.c</file>
-         <hash>27ad62c2e7872a83216732bc82b83a5f9f7a9dce636bef00d3875914920fac04</hash>
+         <hash>e267338f9d365d9d30d8a91c0eb76f00dc590bd95d985478b2c92d0d8593b027</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\usb\src\usb_device_function_driver.h</file>
@@ -15301,7 +14091,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\usb\src\usb_device_mapping.h</file>
-         <hash>c73881cf22375ff35c1290a2e40055cb8e1d955610d11c904914ff347d5b753d</hash>
+         <hash>8946c320acdb2ca965664fdf6830d839c8488cb0144d4430d9531fd4408d8df3</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\usb\src\usb_device_msd.c</file>
@@ -15353,7 +14143,7 @@
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\usb_device_init_data.c</file>
-         <hash>ca7a1c40deeca57e93ef3dbb94eafef776508d8e952720347058e24f0ef83e2c</hash>
+         <hash>21680b610b1781581fe4c1c01058644e8ba7411ecd43c1b9b3947803bc843aac</hash>
       </entry>
       <entry>
          <file>..\src\config\aws_sdk_wfi32_iot_freertos\user.h</file>
@@ -15365,115 +14155,115 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\FreeRTOS_tasks.c</file>
-         <hash>547c9a137d9585dd12ffb1423029a77b867f2786523c8d9f0e7ec186012eb664</hash>
+         <hash>b0e2349f8d150fcb569570d73cf8a80da4eee689039a9f291e8b3c36af6f97f4</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\croutine.c</file>
-         <hash>44cfb70252fc1d3d9e29a85558973dc6763b50dfa6a9e7b1d9e4e4b9a6a5d3ee</hash>
+         <hash>0ca8c178b698a6ad5ce3f6f1246ab287bfb5510f3c04e1d00e5cfb49c57fc66b</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\event_groups.c</file>
-         <hash>fb75d25b43fb71785fdebf58e78d17bca4130b9fb0bb4ae372a25a6b9e71c9e8</hash>
+         <hash>42ca0bc7afdfb48e9089dff2b4b047e1515a93e7fce031756af6c49b2212c215</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h</file>
-         <hash>3c73ef4930c8d06ae1dab5c94ce87e34b28d9797af60335703d8d6378b941fd6</hash>
+         <hash>7e29c7d9c773561ec4d0125409036f102f1f15162e213d32568ddf3d8ceddfeb</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\croutine.h</file>
-         <hash>2ccdcd2517e74339e4eb77c1a00e039635bb00f1274393c7f9228c85e126c7d2</hash>
+         <hash>b7060be39f6c8d0ffd169806382eed5a411776f0d69b0fb3ade6b07e678303f9</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h</file>
-         <hash>ec6fb5f48d0a483aaa0dea7043cf0c8d72b4bfd359cb9ba8aec4731085454d6d</hash>
+         <hash>81d325362fc67518de04d5070609e537d0757e4cc6d6332e8118b4f81a4fdce7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\event_groups.h</file>
-         <hash>da63ebb403ecd7d3eceeab6d6676dec1c844528c9351b972a32e186413ad3372</hash>
+         <hash>2399a780de0eefe95067f5b7744d5e213ad9c793fc6468a8535a8e604f85cbba</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\list.h</file>
-         <hash>b99010e5acaab3a63fdb8d7e6ead11e933036a8066087b11effd0792366264fb</hash>
+         <hash>0848dc9696a2d4d11bb6957fedb6ec5dfb1c2326dfb66af5ca848b1b32a86b66</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\message_buffer.h</file>
-         <hash>e5bf9fc4ac30caa274069072e882eafeab26350ec26642b84a077add2eecc3b8</hash>
+         <hash>4883fce829d415b7d14d0567965cd97e41634339cd3a72a07b76baebedbc0a57</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</file>
-         <hash>0338c4accccc1d4d7647543be11b3cee75694f4411c123b8e18cffc9b2d9fae6</hash>
+         <hash>8cb02fee372e1cc1958022e054122d248c1c184cfc00eb3db6d0fbc0bfef87d1</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_wrappers.h</file>
-         <hash>4fb1b8e601afb8132548131f875425ef22fc229917385c0b681930625bab1244</hash>
+         <hash>d99486024fd44173ff23c14ee8561b6e0ce6ee41ad6d6a7e7b17ea97a5023e8b</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\portable.h</file>
-         <hash>aa9d083bda41b0e26dcc6a34e415cddf5d9cb7c2e8b0eadfe459e0f242ea2799</hash>
+         <hash>d26267188226020346bd048c9dd0e767b91c7023e5ee0d5f9aa7c7c1864de180</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\projdefs.h</file>
-         <hash>9b95010308b0f140a8f42378b4716e4d8ba5781e7921b054ba12fb0cc0a38e9d</hash>
+         <hash>3d37a1403a69a58a07e214f6a9759601cc0fbe53319c5b14e17f4de5fb8ec0b7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\queue.h</file>
-         <hash>ebfc3482220cce6ef67b3f44f4a8e820bfc394c91346c4b03b4b51cee4a8d22d</hash>
+         <hash>27b85dc3c610f83fee9208e0dd4d8dfa3168ea2259cbe1662e2f6a0ac55431f5</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\semphr.h</file>
-         <hash>b72ea325a17951e03532c34110577c526f0762d682f592c60aab0fd820092b38</hash>
+         <hash>89a46fcd718990d24f9fea16c681527eec502712ca2d1b0a4e8d6c205f7452e1</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h</file>
-         <hash>dc41c898de90bd3aa1d0c9966b154227b4f5d80ac94fe12db7e834b5ddc6d8d7</hash>
+         <hash>d167d886d199615eeeca0acb935bf5c99b42c30a322273363ddc8dec03a58174</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</file>
-         <hash>8f7076ac0af0fa3467abd41dc7e5ebe78813302924f1306986cc48908378ef18</hash>
+         <hash>51da6d9a7cc2cf1504b4f1564e814f422efb9b688fc6e58946f41d0fe23d2d22</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\task.h</file>
-         <hash>1372d7666ec18f3af6ce82d0e3e2afed37214edd103d89c8ffa6ceb8c114df8f</hash>
+         <hash>0d71440d1d81d990fa79677c0836712a3e2655ff3ad75478f5a221e2f0583cf8</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\timers.h</file>
-         <hash>caddca33d6ee350202a6adcdd4d36d25a11765fd0efd4da58d07c379524ee802</hash>
+         <hash>19e373d04e2f01f9f69a9d3017a75a46b4f7b6e8016742702b10e112786d6181</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\list.c</file>
-         <hash>ec490e7bf067cd73f972c32d4caca8747561979e2b3588ff6153a64c037a616f</hash>
+         <hash>55a947c8bd1eec01ebafcb46ccc96cd33090cbdcd3f0114b9ea6a61ebdd6ee7a</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MPLAB\PIC32MZ\ISR_Support.h</file>
-         <hash>ce07d75c54c64dfafec98bd5abf61b8a8b96b0e7afdf080ca4ade2dbdd2ad276</hash>
+         <hash>f035f03c56c0148bc0e3ddd5c7d0880d1aa041e6a83e2880e62e28d9ee23fdd1</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MPLAB\PIC32MZ\port.c</file>
-         <hash>a39f5f7f91f66b2aa89c31bbee13531887c37de236efbe5cca5ec3077519a600</hash>
+         <hash>0fa39ccbd15a90bc02b1361e81020a97670cdfc453c33885ef2f4b10a1563418</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MPLAB\PIC32MZ\port_asm.S</file>
-         <hash>1d2b92a9f6502a8e13d41f6311c614e5baacbbabb8a60de6687c29e44d0564a7</hash>
+         <hash>ad8eee9bb49ea681a72d2323a73a78f946a8dbddf0a511d7a9c6d164345eafc5</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MPLAB\PIC32MZ\portmacro.h</file>
-         <hash>0e57aba9c6b2b94ce55c9418decf963a0a170ebc146ad60c16b91e567170c9f6</hash>
+         <hash>3f2319cf683873b27043bee9521d9d49e7b1f5b6dbe41011ab62e7635db5306e</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_3.c</file>
-         <hash>6122066442a43b7ca017cf8d46cb8b26b5eb0212530efeea0032042e50a1f647</hash>
+         <hash>d065c915b8680f38e7a741eadcaf5550b21fa81ab793980337b9b4d63258291c</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\queue.c</file>
-         <hash>d0cdcbb8e86ea61ce9ace08b2aaede01884e36da0c368bd516af642167b780fa</hash>
+         <hash>a4c20318c20a5f49a34fc757092818eb1065b19f142394a04889aa40d67a5023</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\stream_buffer.c</file>
-         <hash>bb61dd521fbd7ddaf40acb88aabd760ebc443d8e22619d85e7e51404f123db17</hash>
+         <hash>b825d6bccefea8a8c06b4a2022dede20af67f5bc2a2e4976947b376bc41613a7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\timers.c</file>
-         <hash>49cc4ef685f3d272fd7dc4cfcbeb650f31b0b3294a6bacd96b57ec56d5100a9f</hash>
+         <hash>3b936fac70fa25b959b53990cd15c20fb85956cdbe22af4249fde0a94590ff01</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\src\conf.c</file>

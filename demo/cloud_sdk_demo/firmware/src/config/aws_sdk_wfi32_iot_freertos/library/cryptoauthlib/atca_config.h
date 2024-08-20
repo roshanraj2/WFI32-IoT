@@ -10,14 +10,13 @@
 #endif
 
 
-
 /** Include Device Support Options */
 #define ATCA_ATECC608_SUPPORT
 
-/** TA100 Specific - Enable auth sessions that require AES (CMAC/GCM) from
-   an external library */
-#define ATCA_TA100_AES_AUTH_SUPPORT
-
+/** Provide Maximum packet size for the command to be sent and received */
+#ifndef MAX_PACKET_SIZE
+#define MAX_PACKET_SIZE     (1073U)
+#endif
 
 
 /* Polling Configuration Options  */
@@ -202,6 +201,15 @@
 #define ATCA_POST_DELAY_MSEC 25
 #endif
 
+
+
+#ifndef MULTIPART_BUF_EN
+#define MULTIPART_BUF_EN              false
+#endif
+
+#ifndef ATCA_PREPROCESSOR_WARNING
+#define ATCA_PREPROCESSOR_WARNING     false
+#endif
 
 /* Define generic interfaces to the processor libraries */
 

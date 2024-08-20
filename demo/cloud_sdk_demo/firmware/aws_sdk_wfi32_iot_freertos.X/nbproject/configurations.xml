@@ -337,11 +337,13 @@
               </logicalFolder>
               <logicalFolder name="calib" displayName="calib" projectFiles="true">
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib/calib_config_check.h</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib/calib_device.h</itemPath>
               </logicalFolder>
               <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
                 <logicalFolder name="hashes" displayName="hashes" projectFiles="true">
                 </logicalFolder>
-                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/crypto_config_check.h</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/crypto_hw_config_check.h</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/crypto_sw_config_check.h</itemPath>
               </logicalFolder>
               <logicalFolder name="hal" displayName="hal" projectFiles="true">
               </logicalFolder>
@@ -362,9 +364,15 @@
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng/tng_root_cert.h</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng/tflxtls_cert_def_4_device.h</itemPath>
               </logicalFolder>
+              <logicalFolder name="wolfssl" displayName="wolfssl" projectFiles="true">
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/wolfssl/atca_wolfssl_interface.h</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/wolfssl/atca_wolfssl_internal.h</itemPath>
+              </logicalFolder>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_config.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_platform.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_config_check.h</itemPath>
+              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/cal_internal.h</itemPath>
+              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/cal_buffer.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f2" displayName="tcpip" projectFiles="true">
               <logicalFolder name="f1" displayName="src" projectFiles="true">
@@ -1226,6 +1234,7 @@
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/atca_crypto_hw_aes_ccm.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/atca_crypto_pbkdf2.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/atca_crypto_pad.c</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/atca_crypto_sw_aes_gcm.c</itemPath>
               </logicalFolder>
               <logicalFolder name="f1" displayName="hal" projectFiles="true">
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/hal_i2c_harmony.c</itemPath>
@@ -1278,7 +1287,7 @@
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_debug.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_helpers.c</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_helpers.h</itemPath>
-              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_utils_sizes.c</itemPath>
+              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/cal_buffer.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f1" displayName="tcpip" projectFiles="true">
               <logicalFolder name="f1" displayName="src" projectFiles="true">
@@ -1593,7 +1602,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.35</languageToolchainVersion>
+        <languageToolchainVersion>4.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>

@@ -61,6 +61,13 @@
 #define ATCA_CA2_SUPPORT    DEFAULT_DISABLED
 #endif
 
+/* Support for cert feature in second generation of cryptoauth parts */
+#if defined(ATCA_ECC204_SUPPORT) || defined(ATCA_TA010_SUPPORT)
+#define ATCA_CA2_CERT_SUPPORT    DEFAULT_ENABLED
+#else
+#define ATCA_CA2_CERT_SUPPORT    DEFAULT_DISABLED
+#endif
+
 /* Classic Cryptoauth Devices */
 #if defined(ATCA_SHA_SUPPORT) || defined(ATCA_ECC_SUPPORT) || ATCA_CA2_SUPPORT
 #define ATCA_CA_SUPPORT     DEFAULT_ENABLED
@@ -69,11 +76,13 @@
 #endif
 
 /* New Trust Anchor Devices */
-#if defined(ATCA_TA100_SUPPORT)
+#ifndef ATCA_TA_SUPPORT
+#if defined(ATCA_TA100_SUPPORT) || defined(ATCA_TA101_SUPPORT)
 #define ATCA_TA_SUPPORT     DEFAULT_ENABLED
 #else
 #define ATCA_TA_SUPPORT     DEFAULT_DISABLED
 #endif
+#endif /* ATCA_TA_SUPPORT */
 
 /* Check for external crypto libraries for host side operations */
 #ifndef ATCA_HOSTLIB_EN
@@ -95,10 +104,9 @@
 #define ATCA_CHECK_PARAMS_EN    DEFAULT_ENABLED
 #endif
 
-
 #if ATCA_CHECK_PARAMS_EN
 /** Emits message and returns the status code when the condition is true */
-#define ATCA_CHECK_INVALID_MSG(c, s, m)     if (c) return ATCA_TRACE(s, m)
+#define ATCA_CHECK_INVALID_MSG(c, s, m)     if (c) { return ATCA_TRACE(s, m); }
 /* Continues when the condition is true - emits message if the condition is false */
 #define ATCA_CHECK_VALID_MSG(c, m)          if (!ATCA_TRACE(!(c), m))
 #else
@@ -109,7 +117,30 @@
 #define ATCA_CHECK_INVALID(c, s)    ATCA_CHECK_INVALID_MSG(c, s, "")
 #define ATCA_CHECK_VALID(c)         ATCA_CHECK_VALID_MSG(c, "")
 
+/** \def MULTIPART_BUF_EN
+ * Enables multipart buffer handling (generally for small memory model platforms)
+ */
+#ifndef MULTIPART_BUF_EN
+#define MULTIPART_BUF_EN        (DEFAULT_DISABLED)
+#endif
 
+/** \def ATCACERT_EN
+ * Enables the ATCACERT x509 handling module
+ */
+#ifndef ATCACERT_EN
+#define ATCACERT_EN             (DEFAULT_ENABLED)
+#endif
+
+#ifndef ATCA_NO_HEAP
+#define ATCA_HEAP
+#endif 
+
+/** \def ATCA_UNUSED_VAR_CHECK
+ * Enables removal of compiler warning due to unused variables
+ */
+#ifndef ATCA_UNUSED_VAR_CHECK
+#define ATCA_UNUSED_VAR_CHECK   (DEFAULT_ENABLED)
+#endif
 
 /**** AES command ****/
 

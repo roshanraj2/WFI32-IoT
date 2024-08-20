@@ -25,8 +25,8 @@
  * THIS SOFTWARE.
  */
 
-#ifndef _ATCA_LIB_H
-#define _ATCA_LIB_H
+#ifndef CRYPTOAUTHLIB_H
+#define CRYPTOAUTHLIB_H
 
 #include <stdio.h>
 #include <stdint.h>
@@ -43,24 +43,47 @@
 #include "atca_platform.h"
 #include "atca_status.h"
 #include "atca_debug.h"
+#include "cal_buffer.h"
 #include "atca_iface.h"
+#include "atca_device.h"
 #include "atca_helpers.h"
 #include "hal/atca_hal.h"
 
 /* Common Cryptographic Definitions */
-#define ATCA_SHA256_BLOCK_SIZE              (64)
-#define ATCA_SHA256_DIGEST_SIZE             (32)
+#define ATCA_SHA256_BLOCK_SIZE              (64u)
+#define ATCA_SHA256_DIGEST_SIZE             (32u)
 
-#define ATCA_AES128_BLOCK_SIZE              (16)
+#define ATCA_SHA384_BLOCK_SIZE              (128u)
+#define ATCA_SHA384_DIGEST_SIZE             (48u)
+
+#define ATCA_SHA512_BLOCK_SIZE              (128u)
+#define ATCA_SHA512_DIGEST_SIZE             (64u)
+
+#define ATCA_AES128_BLOCK_SIZE              (16u)
 #define ATCA_AES128_KEY_SIZE                (16)
 
-#define ATCA_ECCP256_KEY_SIZE               (32)
-#define ATCA_ECCP256_PUBKEY_SIZE            (64)
-#define ATCA_ECCP256_SIG_SIZE               (64)
+#define ATCA_AES256_BLOCK_SIZE              (16u)
+#define ATCA_AES256_KEY_SIZE                (32u)
+
+#define ATCA_ECCP256_MSG_SIZE               (32u)
+#define ATCA_KEY_TYPE_ECCP256               (0u)
+#define ATCA_ECCP256_KEY_SIZE               (32u)
+#define ATCA_ECCP256_PUBKEY_SIZE            (64u)
+#define ATCA_ECCP256_SIG_SIZE               (64u)
+#define ATCA_ECCP256_OID_SIZE               (10u)
+#define ATCA_ECCP256_ASN1_HDR_SIZE          (27u)
+
+#define ATCA_ECC_UNCOMPRESSED_TYPE          ((uint8_t)0x04)
+#define ATCA_ECC_UNCOMPRESSED_TYPE_OFFSET   (1u)
 
 #define ATCA_ZONE_CONFIG                    ((uint8_t)0x00)
 #define ATCA_ZONE_OTP                       ((uint8_t)0x01)
 #define ATCA_ZONE_DATA                      ((uint8_t)0x02)
+
+#define DEVICE_PRODUCT_ID_LOCATION  0
+#define DEVICE_IDENTIFIER_LOCATION  1
+#define DEVICE_PART_LOCATION        2
+#define DEVICE_REVISION_LOCATION    3
 
 #if ATCA_CA2_SUPPORT
 #define ATCA_ZONE_CA2_DATA                  ((uint8_t)0x00)
@@ -80,7 +103,6 @@
 
 #if ATCA_CA_SUPPORT || defined(ATCA_USE_ATCAB_FUNCTIONS)
 #include "atca_cfgs.h"
-#include "atca_device.h"
 #include "calib/calib_basic.h"
 #include "calib/calib_command.h"
 #include "calib/calib_aes_gcm.h"
@@ -103,4 +125,4 @@
     #define ATCA_TRACE(s, m)         atca_trace(s)
 #endif
 
-#endif
+#endif /* CRYPTOAUTHLIB_H */

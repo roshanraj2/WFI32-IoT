@@ -38,6 +38,10 @@
 
 #include "cryptoauthlib.h"
 
+#if (CA_MAX_PACKET_SIZE < ATCA_CMD_SIZE_MIN)
+#error "Info command packet cannot be accommodated inside the maximum packet size provided"
+#endif
+
 /** \brief Issues an Info command, which return internal device information and
  *          can control GPIO and the persistent latch.
  *
@@ -51,12 +55,14 @@
 ATCA_STATUS calib_info_base(ATCADevice device, uint8_t mode, uint16_t param2, uint8_t* out_data)
 {
     ATCAPacket packet;
-    ATCA_STATUS status = ATCA_GEN_FAIL;
+    ATCA_STATUS status;
 
     if (device == NULL)
     {
         return ATCA_TRACE(ATCA_BAD_PARAM, "NULL pointer received");
     }
+
+    (void)memset(&packet, 0x00, sizeof(ATCAPacket));
 
     // build an info command
     packet.param1 = mode;
@@ -66,7 +72,7 @@ ATCA_STATUS calib_info_base(ATCADevice device, uint8_t mode, uint16_t param2, ui
     {
         if ((status = atInfo(atcab_get_device_type_ext(device), &packet)) != ATCA_SUCCESS)
         {
-            ATCA_TRACE(status, "atInfo - failed");
+            (void)ATCA_TRACE(status, "atInfo - failed");
             break;
         }
 
@@ -84,23 +90,23 @@ ATCA_STATUS calib_info_base(ATCADevice device, uint8_t mode, uint16_t param2, ui
             }
             else
             {
-                ATCA_TRACE(status, "calib_info_base - execution failed");
+                (void)ATCA_TRACE(status, "calib_info_base - execution failed");
                 break;
             }
         }
 
         uint8_t response = packet.data[ATCA_COUNT_IDX];
 
-        if (response && out_data)
+        if ((response != 0u) && (NULL != out_data))
         {
             if (((INFO_MODE_LOCK_STATUS == mode) || (INFO_MODE_KEY_VALID == mode))
                 && (atcab_is_ca2_device(device->mIface.mIfaceCFG->devtype)))
             {
-                memcpy(out_data, &packet.data[ATCA_RSP_DATA_IDX], 1);
+                (void)memcpy(out_data, &packet.data[ATCA_RSP_DATA_IDX], 1);
             }
-            else if (response >= 7)
+            else if (response >= 7u)
             {
-                memcpy(out_data, &packet.data[ATCA_RSP_DATA_IDX], 4);
+                (void)memcpy(out_data, &packet.data[ATCA_RSP_DATA_IDX], 4);
             }
             else
             {
@@ -108,8 +114,7 @@ ATCA_STATUS calib_info_base(ATCADevice device, uint8_t mode, uint16_t param2, ui
             }
 
         }
-    }
-    while (0);
+    } while (false);
 
     return status;
 }
@@ -141,7 +146,7 @@ ATCA_STATUS calib_info(ATCADevice device, uint8_t* revision)
 
 ATCA_STATUS calib_info_get_latch(ATCADevice device, bool* state)
 {
-    ATCA_STATUS status = ATCA_GEN_FAIL;
+    ATCA_STATUS status;
     uint8_t out_data[4];
 
     if (state == NULL)
@@ -154,7 +159,7 @@ ATCA_STATUS calib_info_get_latch(ATCADevice device, bool* state)
         return ATCA_TRACE(status, "calib_info_base - failed");
     }
 
-    *state = (out_data[0] == 1);
+    *state = (out_data[0] == 1u);
 
     return status;
 }
